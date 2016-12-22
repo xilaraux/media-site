@@ -3,8 +3,21 @@
 
 // Variables
 $screenWidth: 1024px;
+
+$aqua: #00BEAE;
+$yellow: #F4C900;
+$orangered: #FF5A5F;
+
 $headerBgColor: #00BEAE;
 $headerItemHoverBgColor: #06ad9f;
+
+$contentSectionBgGray: #E5E5E5;
+$articleHeaderColor: #4F4F4F;
+$articleTextColor: #333333;
+$articleLinkColor: #fff;
+$articleLinkIntroBgC: #FF5A5F;
+
+$footerBgColor: #404040;
 
 // Mixins
 @mixin verticalMiddle {
@@ -34,6 +47,11 @@ $headerItemHoverBgColor: #06ad9f;
   display: inline-block;
 }
 
+.paddingMarginZero {
+  padding: 0;
+  margin: 0;
+}
+
 // Page configurations
 * {
   box-sizing: border-box;
@@ -44,20 +62,20 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-[class='page-container'] {
+.page-container {
   min-height: calc(100% - 280px);
 }
 
-// Container
-[class='container'] {
-  width: $screenWidth;
-  height: 100%;
-  margin: 0 auto;
+[class='about-page'] {
+  // Container
+  .container {
+    max-width: $screenWidth;
+    height: 100%;
+    margin: 0 auto;
 
-  @include clearfix;
-}
+    @include clearfix;
+  }
 
-[class='container']
   .container__left {
     width: 50%;
     height: 100%;
@@ -66,7 +84,6 @@ html, body {
     @include clearfix;
   }
 
-[class='container']
   .container__right {
     width: 50%;
     height: 100%;
@@ -75,13 +92,12 @@ html, body {
     @include clearfix;
   }
 
-// Header
-[class='header'] {
-  height: 64px;
-  background-color: $headerBgColor;
-}
+  // Header
+  .header {
+    height: 64px;
+    background-color: $headerBgColor;
+  }
 
-[class='header']
   .header__logo {
     height: 100%;
     padding-left: 20px;
@@ -89,7 +105,6 @@ html, body {
     @include verticalMiddle;
   }
 
-[class='header']
   .header__link {
     width: 100%;
     height: 100%;
@@ -98,14 +113,12 @@ html, body {
     display: inline-block;
   }
 
-[class='header']
   .header__link_item {
     padding: 0px 18px;
 
     @include verticalMiddle;
   }
 
-[class='header']
   .header__pic {
     height: 42px;
     width: 42px;
@@ -116,7 +129,6 @@ html, body {
     @extend .verticalAlignClass;
   }
 
-[class='header']
   .header__slogan {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -128,7 +140,6 @@ html, body {
     @extend .verticalAlignClass;
   }
 
-[class='header']
   .header__nav {
     height: 100%;
     color: #fff;
@@ -136,7 +147,6 @@ html, body {
     font-weight: bold;
   }
 
-[class='header']
   .header__list {
     padding: 0;
     margin: 0;
@@ -145,7 +155,6 @@ html, body {
     float: right;
   }
 
-[class='header']
   .header__item {
     height: 100%;
 
@@ -153,15 +162,14 @@ html, body {
 
     &:hover {
       background-color: $headerItemHoverBgColor;
+      transition: background-color 1s;
     }
   }
 
-[class='header']
   .header__text {
     @extend .verticalAlignClass;
   }
 
-[class='header']
   .header__pic-arrow {
     width: 8px;
     height: 4px;
@@ -173,7 +181,6 @@ html, body {
     @extend .verticalAlignClass;
   }
 
-[class='header']
   .header__pic-heart {
     width: 20px;
     height: 17px;
@@ -185,9 +192,127 @@ html, body {
     @extend .verticalAlignClass;
   }
 
+  // Content
+  .content {
 
+  }
+  .content__section {
 
-// FOOTER
-[class='footer'] {
-  height: 280px;
+  }
+
+  .content__section_gray {
+    background-color: $contentSectionBgGray;
+  }
+
+  // Article wrapper
+  .article-wrapper {
+    padding: 95px 105px;
+  }
+
+  .article-wrapper_center {
+    text-align: center;
+  }
+
+  // Article
+  .article {
+
+  }
+
+  .article_small {
+    width: 314px;
+    height: 354px;
+    margin: 0px 10px 48px;
+
+    display: inline-block;
+
+    text-align: left;
+    padding: 67px 33px 36px 26px;
+
+    background-color: #fff;
+
+    position: relative;
+  }
+
+  .article__header {
+    color: $articleHeaderColor;
+    font-size: 2.25em;
+    font-weight: bold;
+
+    @extend .paddingMarginZero;
+  }
+
+  .article__header_spaceAfter {
+    margin-bottom: 25px;
+  }
+
+  .article__text {
+    color: $articleTextColor;
+
+    @extend .paddingMarginZero;
+  }
+
+  .article__text_small {
+    font-size: .9em;
+    line-height: 1.2em;
+  }
+
+  .article__text_big {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+  .article__text_half {
+    width: 50%;
+  }
+
+  .article__link {
+    width: 100%;
+    height: 100%;
+    color: $articleLinkColor;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .article__link_intro {
+    width: 240px;
+    padding: 17px 0;
+    margin: 40px 0 0;
+    background-color: $articleLinkIntroBgC;
+
+    font-size: .9em;
+    text-align: center;
+
+    &:hover {
+      background-color: rgba($articleLinkIntroBgC, .8);
+      transition: background-color 1s;
+    }
+  }
+
+  .article__pic {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: calc(50% - 32px);
+    top: -9%;
+  }
+
+  .article__pic_aqua {
+    background-color: $aqua;
+  }
+
+  .article__pic_yellow {
+    background-color: $yellow;
+  }
+
+  .article__pic_orangered {
+    background-color: $orangered;
+  }
+
+  // FOOTER
+  .footer {
+    height: 280px;
+    background-color: $footerBgColor;
+  }
 }
