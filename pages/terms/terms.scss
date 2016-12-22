@@ -232,16 +232,29 @@ html, body {
     height: 45px;
     margin-right: 30px;
     display: inline-block;
+
+    transition: border-bottom .3s ease-in-out;
   }
 
   .term-nav__item_active {
     border-bottom: $termNavActiveItem solid 6px;
   }
+  
+  // Make term-nav work...again.
+  .term-nav__controller {
+    display: none;
+  }
+
+  .term-nav__controller:checked + .term-nav__item {
+    border-bottom: $termNavActiveItem solid 6px;
+  }
+
 
   .term-nav__link {
     height: 100%;
     width: 100%;
     display: inline-block;
+    cursor: pointer;
 
     color: $termNavLinkColor;
 

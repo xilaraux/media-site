@@ -129,13 +129,19 @@ html, body {
 [class='content'] .term-nav__item {
   height: 45px;
   margin-right: 30px;
-  display: inline-block; }
+  display: inline-block;
+  transition: border-bottom .3s ease-in-out; }
 [class='content'] .term-nav__item_active {
+  border-bottom: #007067 solid 6px; }
+[class='content'] .term-nav__controller {
+  display: none; }
+[class='content'] .term-nav__controller:checked + .term-nav__item {
   border-bottom: #007067 solid 6px; }
 [class='content'] .term-nav__link {
   height: 100%;
   width: 100%;
   display: inline-block;
+  cursor: pointer;
   color: #fff;
   font-size: .9em;
   font-weight: bold;
