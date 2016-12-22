@@ -3,7 +3,7 @@
   vertical-align: middle;
   display: inline-block; }
 
-.paddingMarginZero, [class='about-page'] .article__header, [class='about-page'] .article__text {
+.paddingMarginZero, [class='about-page'] .article__header, [class='about-page'] .article__text, [class='about-page'] .partners {
   padding: 0;
   margin: 0; }
 
@@ -214,8 +214,33 @@ html, body {
   background-image: url(../../images/world-map.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+[class='about-page'] .partners {
+  margin-top: 40px;
+  width: 100%;
+  word-spacing: 50px; }
+[class='about-page'] .partners__item {
+  display: inline-block;
+  width: 25%;
+  height: 100px;
+  margin-right: 20px;
+  text-align: center;
+  list-style-type: none; }
+[class='about-page'] .partners__link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; }
+  [class='about-page'] .partners__link:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+[class='about-page'] .partners__icon {
+  width: 100px; }
 [class='about-page'] .footer {
   height: 280px;
+  width: 100%;
   background-color: #404040; }
 
 /*# sourceMappingURL=about.css.map */
