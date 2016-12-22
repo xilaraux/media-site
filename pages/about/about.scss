@@ -64,6 +64,8 @@ html, body {
 
 .page-container {
   min-height: calc(100% - 280px);
+
+  min-width: 680px;
 }
 
 [class='about-page'] {
@@ -90,6 +92,17 @@ html, body {
     float: right;
 
     @include clearfix;
+  }
+
+
+  @media all and (max-width: 880px) {
+    .container__left {
+      width: 260px;
+    }
+
+    .container__right {
+      width: calc(100% - 260px);
+    }
   }
 
   // Header
@@ -157,12 +170,12 @@ html, body {
 
   .header__item {
     height: 100%;
+    transition: background-color 1s ease-in-out;
 
     @extend .verticalAlignClass;
 
     &:hover {
       background-color: $headerItemHoverBgColor;
-      transition: background-color 1s;
     }
   }
 
@@ -211,6 +224,31 @@ html, body {
 
   .article-wrapper_center {
     text-align: center;
+    padding-bottom: 0;
+  }
+
+  .article-wrapper_top-padding {
+    padding-top: 45px;
+  }
+
+  .article-wrapper_bottom-padding {
+    padding-bottom: 30px;
+  }
+
+  @media all and (max-width: 900px) {
+    .article-wrapper {
+      padding: 40px 50px;
+    }
+  }
+
+  @media all and (max-width: 790px) {
+    .article-wrapper {
+      padding: 40px 0px;
+    }
+
+    .article-wrapper_intro {
+      padding: 40px 20px;
+    }
   }
 
   // Article
@@ -240,8 +278,12 @@ html, body {
 
     @extend .paddingMarginZero;
   }
+  
+  .article__header_center {
+    text-align: center;
+  }
 
-  .article__header_spaceAfter {
+  .article__header_space-after {
     margin-bottom: 25px;
   }
 
@@ -281,10 +323,10 @@ html, body {
 
     font-size: .9em;
     text-align: center;
+    transition: background-color 1s ease-in-out;
 
     &:hover {
       background-color: rgba($articleLinkIntroBgC, .8);
-      transition: background-color 1s;
     }
   }
 
@@ -308,6 +350,40 @@ html, body {
 
   .article__pic_orangered {
     background-color: $orangered;
+  }
+
+  .article__image {
+    margin-top: 25px;
+  }
+
+  .article__image_partners {
+    max-width: 100%;
+    height: 315px;
+    max-height: 315px;
+
+    background-image: url(../../images/partners.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .article__image_plane {
+    max-width: 100%;
+    height: 80px;
+    max-height: 80px;
+
+    background-image: url(../../images/plane.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .article__image_world-map {
+    max-width: 100%;
+    height: 370px;
+    max-height: 370px;
+
+    background-image: url(../../images/world-map.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
 
   // FOOTER
