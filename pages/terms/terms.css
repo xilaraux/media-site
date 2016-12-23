@@ -135,8 +135,6 @@ html, body {
   border-bottom: #007067 solid 6px; }
 [class='content'] .term-nav__controller {
   display: none; }
-[class='content'] .term-nav__controller:checked + .term-nav__item {
-  border-bottom: #007067 solid 6px; }
 [class='content'] .article__header {
   display: none; }
 [class='content'] .term-nav__controller:checked + .article__header {

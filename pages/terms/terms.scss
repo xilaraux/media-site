@@ -245,9 +245,9 @@ html, body {
     display: none;
   }
 
-  .term-nav__controller:checked + .term-nav__item {
-    border-bottom: $termNavActiveItem solid 6px;
-  }
+  //.term-nav__controller:checked + .term-nav__item {
+  //  border-bottom: $termNavActiveItem solid 6px;
+  //}
 
   .article__header {
     display: none;
