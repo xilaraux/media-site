@@ -171,24 +171,26 @@ html, body {
 [class='content'] .article__list {
   margin-top: 20px; }
 [class='content'] .terms {
-  width: 640px;
+  max-width: 640px;
   margin: 35px auto;
   counter-reset: item; }
 [class='content'] .terms__item {
   display: block;
-  margin-top: 20px; }
+  margin-top: 25px; }
   [class='content'] .terms__item:before {
     font-size: 1.5em;
     color: #007067;
     content: counters(item,".") ". ";
     counter-increment: item; }
-[class='content'] .terms__item_small:before {
-  font-size: .9em; }
+[class='content'] .terms__item_small {
+  margin-top: 15px; }
+  [class='content'] .terms__item_small:before {
+    font-size: .9em; }
 [class='content'] .terms__item_not-marked {
   margin-top: 6px;
-  padding-left: 40px;
+  padding-left: 35px;
   background-image: url(../../images/circle.svg);
-  background-position: 25px 5px;
+  background-position: 15px 5px;
   background-repeat: no-repeat; }
   [class='content'] .terms__item_not-marked:before {
     display: none; }
@@ -198,7 +200,7 @@ html, body {
 [class='content'] .terms__text {
   margin: 15px 0 0;
   font-size: .9em;
-  line-height: 1.4em;
+  line-height: 1.38em;
   color: #333333; }
 [class='content'] .terms__text_next-line:before {
   content: '';

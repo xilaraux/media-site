@@ -314,7 +314,7 @@ html, body {
 
   // Terms
   .terms {
-    width: 640px;
+    max-width: 640px;
     margin: 35px auto;
 
     counter-reset: item;
@@ -324,7 +324,7 @@ html, body {
   
   .terms__item {
     display: block;
-    margin-top: 20px;
+    margin-top: 25px;
 
     &:before {
       font-size: 1.5em;
@@ -336,6 +336,8 @@ html, body {
   }
 
   .terms__item_small {
+    margin-top: 15px;
+
     &:before {
       font-size: .9em;
     }
@@ -343,10 +345,10 @@ html, body {
 
   .terms__item_not-marked {
     margin-top: 6px;
-    padding-left: 40px;
+    padding-left: 35px;
 
     background-image: url(../../images/circle.svg);
-    background-position: 25px 5px;
+    background-position: 15px 5px;
     background-repeat: no-repeat;
 
     &:before {
@@ -363,7 +365,7 @@ html, body {
     margin: 15px 0 0;
 
     font-size: .9em;
-    line-height: 1.4em;
+    line-height: 1.38em;
     color: $termsTextColor;
   }
 
