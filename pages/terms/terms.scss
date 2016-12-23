@@ -249,6 +249,13 @@ html, body {
     border-bottom: $termNavActiveItem solid 6px;
   }
 
+  .article__header {
+    display: none;
+  }
+
+  .term-nav__controller:checked + .article__header {
+    display: block;
+  }
 
   .term-nav__link {
     height: 100%;
