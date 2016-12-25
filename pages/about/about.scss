@@ -59,13 +59,18 @@ $footerBgColor: #404040;
 
 html, body {
   height: 100%;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+
+  //@media all and (max-width: 720px) {
+  //  font-size: 16px;
+  //}
 }
 
 .page-container {
   min-height: calc(100% - 280px);
 
-  min-width: 680px;
+  //min-width: 680px;
 }
 
 [class='about-page'] {
@@ -113,9 +118,10 @@ html, body {
 
   .header__logo {
     height: 100%;
-    padding-left: 20px;
 
-    @include verticalMiddle;
+    background-image: url(../../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 7px 5px;
   }
 
   .header__link {
@@ -132,31 +138,10 @@ html, body {
     @include verticalMiddle;
   }
 
-  .header__pic {
-    height: 42px;
-    width: 42px;
-    background-image: url(../../images/logo.svg);
-    background-repeat: no-repeat;
-    background-position: -16px -4px;
-
-    @extend .verticalAlignClass;
-  }
-
-  .header__slogan {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-
-    margin-left: 5px;
-
-    @extend .verticalAlignClass;
-  }
-
   .header__nav {
     height: 100%;
     color: #fff;
-    font-size: .75em;
+    font-size: .75rem;
     font-weight: bold;
   }
 
@@ -273,7 +258,7 @@ html, body {
 
   .article__header {
     color: $articleHeaderColor;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: bold;
 
     @extend .paddingMarginZero;
@@ -294,13 +279,13 @@ html, body {
   }
 
   .article__text_small {
-    font-size: .9em;
-    line-height: 1.2em;
+    font-size: .9rem;
+    line-height: 1.2rem;
   }
 
   .article__text_big {
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
 
   .article__text_half {
@@ -321,7 +306,7 @@ html, body {
     margin: 40px 0 0;
     background-color: $articleLinkIntroBgC;
 
-    font-size: .9em;
+    font-size: .9rem;
     text-align: center;
     transition: background-color 1s ease-in-out;
 
