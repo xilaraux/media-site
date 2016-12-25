@@ -96,7 +96,8 @@ html, body {
     top: 0; }
   [class='about-page'] .header__item {
     width: 100%;
-    background-color: #00BEAE; } }
+    background-color: #00BEAE;
+    border-top: 1px solid white; } }
 [class='about-page'] .header__text {
   font-size: .75rem; }
 [class='about-page'] .header__pic-arrow {
@@ -229,7 +230,7 @@ html, body {
 [class='about-page'] .partners__item {
   display: inline-block;
   width: 25%;
-  height: 100px;
+  height: 85px;
   margin-right: 20px;
   text-align: center;
   list-style-type: none; }

@@ -202,6 +202,7 @@ html, body {
     .header__item {
       width: 100%;
       background-color: $headerBgColor;
+      border-top: 1px solid white;
     }
   }
 
@@ -440,7 +441,7 @@ html, body {
   .partners__item {
     display: inline-block;
     width: 25%;
-    height: 100px;
+    height: 85px;
     margin-right: 20px;
     text-align: center;
 
