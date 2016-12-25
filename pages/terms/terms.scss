@@ -316,6 +316,7 @@ html, body {
     @extend .paddingMarginZero;
 
     @media all and (max-width: 360px) {
+      padding-left: 0;
       font-size: 1.9rem;
     }
   }

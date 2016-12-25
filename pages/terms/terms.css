@@ -162,6 +162,7 @@ html, body {
   padding-left: 8px; }
   @media all and (max-width: 360px) {
     [class='content'] .article__header {
+      padding-left: 0;
       font-size: 1.9rem; } }
 [class='content'] .article__header_center {
   text-align: center; }
