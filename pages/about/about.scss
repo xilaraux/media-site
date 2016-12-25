@@ -304,6 +304,10 @@ html, body {
     background-color: #fff;
 
     position: relative;
+
+    @media all and (max-width: 360px) {
+      margin: 0 0 55px;
+    }
   }
 
   .article__header {

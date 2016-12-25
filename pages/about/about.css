@@ -146,6 +146,9 @@ html, body {
   padding: 67px 33px 36px 26px;
   background-color: #fff;
   position: relative; }
+  @media all and (max-width: 360px) {
+    [class='about-page'] .article_small {
+      margin: 0 0 55px; } }
 [class='about-page'] .article__header {
   color: #4F4F4F;
   font-size: 2.25rem;
