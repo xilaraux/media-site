@@ -215,14 +215,19 @@ html, body {
   .article-wrapper_center {
     text-align: center;
     padding-bottom: 0;
+    padding-top: 90px;
   }
 
   .article-wrapper_top-padding {
-    padding-top: 45px;
+    padding-top: 39px;
   }
 
   .article-wrapper_bottom-padding {
     padding-bottom: 30px;
+  }
+
+  .article-wrapper_intro {
+    padding: 92px 104px;
   }
 
   @media all and (max-width: 900px) {
@@ -249,7 +254,7 @@ html, body {
   .article_small {
     width: 314px;
     height: 354px;
-    margin: 0px 10px 48px;
+    margin: 0px 10px 55px;
 
     display: inline-block;
 
@@ -266,6 +271,8 @@ html, body {
     font-size: 2.25rem;
     font-weight: bold;
 
+    margin-bottom: 5px;
+
     @extend .paddingMarginZero;
   }
   
@@ -274,7 +281,9 @@ html, body {
   }
 
   .article__header_space-after {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
+    word-spacing: 4px;
+    letter-spacing: 0px;
   }
 
   .article__text {
@@ -295,6 +304,9 @@ html, body {
 
   .article__text_half {
     width: 50%;
+    line-height: 25px;
+    word-spacing: 3px;
+    letter-spacing: 0px;
   }
 
   .article__link {
@@ -308,7 +320,7 @@ html, body {
   .article__link_intro {
     width: 240px;
     padding: 17px 0;
-    margin: 40px 0 0;
+    margin: 44px 0 0;
     background-color: $articleLinkIntroBgC;
 
     font-size: .9rem;
@@ -326,8 +338,8 @@ html, body {
     border-radius: 50%;
 
     position: absolute;
-    left: calc(50% - 32px);
-    top: -9%;
+    left: calc(51% - 32px);
+    top: -10%;
   }
 
   .article__pic_aqua {
@@ -381,6 +393,7 @@ html, body {
     margin-top: 40px;
     width: 100%;
     word-spacing: 50px;
+    text-align: justify;
 
     @extend .paddingMarginZero;
   }
@@ -393,6 +406,10 @@ html, body {
     text-align: center;
 
     list-style-type: none;
+
+    @media all and (max-width: 690px){
+      width: 100%;
+    }
   }
 
   .partners__link {
@@ -402,8 +419,6 @@ html, body {
     text-decoration: none;
 
     text-align: center;
-
-    @include verticalMiddle;
   }
 
   .partners__icon {
