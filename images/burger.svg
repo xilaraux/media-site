@@ -1,0 +1,24 @@
+<svg width="23" height="18" viewBox="0 0 23 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-995 -2784)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 17" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2785)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_stroke" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2785)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 17" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2792.27)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_stroke" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2792.27)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 17" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2799.55)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_stroke" transform="matrix(1 -2.67189e-24 2.67189e-24 1 996.108 2799.55)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 20 0L 20 1.45455L 0 1.45455L 0 0Z"/>
+<path id="path1_stroke" d="M 0 0L 0 -1C -0.552285 -1 -1 -0.552285 -1 2.22045e-16L 0 0ZM 20 0L 21 0C 21 -0.552285 20.5523 -1 20 -1L 20 0ZM 20 1.45455L 20 2.45455C 20.5523 2.45455 21 2.00683 21 1.45455L 20 1.45455ZM 0 1.45455L -1 1.45455C -1 2.00683 -0.552285 2.45455 2.22045e-16 2.45455L 0 1.45455ZM 0 1L 20 1L 20 -1L 0 -1L 0 1ZM 19 0L 19 1.45455L 21 1.45455L 21 0L 19 0ZM 20 0.454545L 0 0.454545L 0 2.45455L 20 2.45455L 20 0.454545ZM 1 1.45455L 1 0L -1 0L -1 1.45455L 1 1.45455Z"/>
+</defs>
+</svg>

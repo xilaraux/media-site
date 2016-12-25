@@ -21,20 +21,21 @@ html, body {
 [class='about-page'] .container {
   max-width: 1024px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 0; }
 [class='about-page'] .container__left {
   width: 50%;
   height: 100%;
-  float: left; }
+  display: inline-block; }
 [class='about-page'] .container__right {
   width: 50%;
   height: 100%;
-  float: right; }
+  display: inline-block; }
 @media all and (max-width: 880px) {
   [class='about-page'] .container__left {
-    width: 260px; }
+    width: 162px; }
   [class='about-page'] .container__right {
-    width: calc(100% - 260px); } }
+    width: calc(100% - 162px); } }
 [class='about-page'] .header {
   height: 64px;
   background-color: #00BEAE; }
@@ -63,6 +64,8 @@ html, body {
   color: #fff;
   font-size: .75rem;
   font-weight: bold; }
+[class='about-page'] .header__burger {
+  display: none; }
 [class='about-page'] .header__list {
   padding: 0;
   margin: 0;
@@ -70,11 +73,30 @@ html, body {
   text-transform: uppercase;
   float: right;
   font-size: 0; }
+[class='about-page'] .header__list_open {
+  display: none; }
 [class='about-page'] .header__item {
   height: 100%;
   transition: background-color 1s ease-in-out; }
   [class='about-page'] .header__item:hover {
     background-color: #06ad9f; }
+@media all and (max-width: 690px) {
+  [class='about-page'] .header__burger {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 16px;
+    margin: 24px 20px; }
+  [class='about-page'] .header__list {
+    display: none; }
+  [class='about-page'] .header__list_open {
+    display: block;
+    width: calc(100% + 162px);
+    position: relative;
+    top: 0; }
+  [class='about-page'] .header__item {
+    width: 100%;
+    background-color: #00BEAE; } }
 [class='about-page'] .header__text {
   font-size: .75rem; }
 [class='about-page'] .header__pic-arrow {
@@ -213,7 +235,8 @@ html, body {
   list-style-type: none; }
   @media all and (max-width: 690px) {
     [class='about-page'] .partners__item {
-      width: 100%; } }
+      width: 100%;
+      margin-right: 0; } }
 [class='about-page'] .partners__link {
   width: 100%;
   height: 100%;

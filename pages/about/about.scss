@@ -79,6 +79,7 @@ html, body {
     max-width: $screenWidth;
     height: 100%;
     margin: 0 auto;
+    font-size: 0;
 
     //@include clearfix;
   }
@@ -86,7 +87,8 @@ html, body {
   .container__left {
     width: 50%;
     height: 100%;
-    float: left;
+    display: inline-block;
+    //float: left;
 
     //@include clearfix;
   }
@@ -94,7 +96,8 @@ html, body {
   .container__right {
     width: 50%;
     height: 100%;
-    float: right;
+    display: inline-block;
+    //float: right;
 
     //@include clearfix;
   }
@@ -102,11 +105,11 @@ html, body {
 
   @media all and (max-width: 880px) {
     .container__left {
-      width: 260px;
+      width: 162px;
     }
 
     .container__right {
-      width: calc(100% - 260px);
+      width: calc(100% - 162px);
     }
   }
 
@@ -147,6 +150,10 @@ html, body {
     font-weight: bold;
   }
 
+  .header__burger {
+    display: none;
+  }
+
   .header__list {
     padding: 0;
     margin: 0;
@@ -154,6 +161,10 @@ html, body {
     text-transform: uppercase;
     float: right;
     font-size: 0;
+  }
+
+  .header__list_open {
+    display: none;
   }
 
   .header__item {
@@ -166,6 +177,34 @@ html, body {
       background-color: $headerItemHoverBgColor;
     }
   }
+
+  @media all and (max-width: 690px){
+    .header__burger {
+      display: inline-block;
+      float: right;
+      width: 20px;
+      height: 16px;
+
+      margin: 24px 20px;
+    }
+
+    .header__list {
+      display: none;
+    }
+
+    .header__list_open {
+      display: block;
+      width: calc(100% + 162px);
+      position: relative;
+      top: 0;
+    }
+
+    .header__item {
+      width: 100%;
+      background-color: $headerBgColor;
+    }
+  }
+
   .header__text {
     font-size: .75rem;
     @extend .verticalAlignClass;
@@ -409,6 +448,7 @@ html, body {
 
     @media all and (max-width: 690px){
       width: 100%;
+      margin-right: 0;
     }
   }
 
