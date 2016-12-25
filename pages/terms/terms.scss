@@ -314,6 +314,10 @@ html, body {
     padding-left: 8px;
 
     @extend .paddingMarginZero;
+
+    @media all and (max-width: 360px) {
+      font-size: 1.9rem;
+    }
   }
 
   .article__header_center {

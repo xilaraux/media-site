@@ -160,6 +160,9 @@ html, body {
   font-weight: bold;
   margin: 32px 0 0;
   padding-left: 8px; }
+  @media all and (max-width: 360px) {
+    [class='content'] .article__header {
+      font-size: 1.9rem; } }
 [class='content'] .article__header_center {
   text-align: center; }
 [class='content'] .article__update {
