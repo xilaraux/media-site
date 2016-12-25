@@ -80,7 +80,7 @@ html, body {
     height: 100%;
     margin: 0 auto;
 
-    @include clearfix;
+    //@include clearfix;
   }
 
   .container__left {
@@ -88,7 +88,7 @@ html, body {
     height: 100%;
     float: left;
 
-    @include clearfix;
+    //@include clearfix;
   }
 
   .container__right {
@@ -96,7 +96,7 @@ html, body {
     height: 100%;
     float: right;
 
-    @include clearfix;
+    //@include clearfix;
   }
 
 
@@ -118,10 +118,12 @@ html, body {
 
   .header__logo {
     height: 100%;
+    width: 142px;
+    margin-left: 20px;
 
     background-image: url(../../images/logo.svg);
     background-repeat: no-repeat;
-    background-position: 7px 5px;
+    background-position: -13px 6px;
   }
 
   .header__link {
@@ -133,7 +135,7 @@ html, body {
   }
 
   .header__link_item {
-    padding: 0px 18px;
+    padding: 0px 19px;
 
     @include verticalMiddle;
   }
@@ -151,6 +153,7 @@ html, body {
     height: 100%;
     text-transform: uppercase;
     float: right;
+    font-size: 0;
   }
 
   .header__item {
@@ -163,8 +166,8 @@ html, body {
       background-color: $headerItemHoverBgColor;
     }
   }
-
   .header__text {
+    font-size: .75rem;
     @extend .verticalAlignClass;
   }
 
@@ -174,17 +177,19 @@ html, body {
     background-image: url(../../images/pic-arrow.svg);
     background-repeat: no-repeat;
     background-position: -1px -2px;
-    margin-left: 12px;
+
+    margin-left: 14px;
+    margin-right: 7px;
 
     @extend .verticalAlignClass;
   }
 
   .header__pic-heart {
-    width: 20px;
-    height: 17px;
+    width: 24px;
+    height: 18px;
     background-image: url(../../images/pic-heart.svg);
     background-repeat: no-repeat;
-    background-position: 0px -1px;
+    background-position: 0px 0px;
     margin-right: 8px;
 
     @extend .verticalAlignClass;

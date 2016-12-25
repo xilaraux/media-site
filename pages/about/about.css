@@ -22,29 +22,14 @@ html, body {
   max-width: 1024px;
   height: 100%;
   margin: 0 auto; }
-  [class='about-page'] .container:before, [class='about-page'] .container:after {
-    content: "";
-    display: table; }
-  [class='about-page'] .container:after {
-    clear: both; }
 [class='about-page'] .container__left {
   width: 50%;
   height: 100%;
   float: left; }
-  [class='about-page'] .container__left:before, [class='about-page'] .container__left:after {
-    content: "";
-    display: table; }
-  [class='about-page'] .container__left:after {
-    clear: both; }
 [class='about-page'] .container__right {
   width: 50%;
   height: 100%;
   float: right; }
-  [class='about-page'] .container__right:before, [class='about-page'] .container__right:after {
-    content: "";
-    display: table; }
-  [class='about-page'] .container__right:after {
-    clear: both; }
 @media all and (max-width: 880px) {
   [class='about-page'] .container__left {
     width: 260px; }
@@ -55,9 +40,11 @@ html, body {
   background-color: #00BEAE; }
 [class='about-page'] .header__logo {
   height: 100%;
+  width: 142px;
+  margin-left: 20px;
   background-image: url(../../images/logo.svg);
   background-repeat: no-repeat;
-  background-position: 7px 5px; }
+  background-position: -13px 6px; }
 [class='about-page'] .header__link {
   width: 100%;
   height: 100%;
@@ -65,7 +52,7 @@ html, body {
   text-decoration: none;
   display: inline-block; }
 [class='about-page'] .header__link_item {
-  padding: 0px 18px; }
+  padding: 0px 19px; }
   [class='about-page'] .header__link_item:before {
     content: '';
     display: inline-block;
@@ -81,25 +68,29 @@ html, body {
   margin: 0;
   height: 100%;
   text-transform: uppercase;
-  float: right; }
+  float: right;
+  font-size: 0; }
 [class='about-page'] .header__item {
   height: 100%;
   transition: background-color 1s ease-in-out; }
   [class='about-page'] .header__item:hover {
     background-color: #06ad9f; }
+[class='about-page'] .header__text {
+  font-size: .75rem; }
 [class='about-page'] .header__pic-arrow {
   width: 8px;
   height: 4px;
   background-image: url(../../images/pic-arrow.svg);
   background-repeat: no-repeat;
   background-position: -1px -2px;
-  margin-left: 12px; }
+  margin-left: 14px;
+  margin-right: 7px; }
 [class='about-page'] .header__pic-heart {
-  width: 20px;
-  height: 17px;
+  width: 24px;
+  height: 18px;
   background-image: url(../../images/pic-heart.svg);
   background-repeat: no-repeat;
-  background-position: 0px -1px;
+  background-position: 0px 0px;
   margin-right: 8px; }
 [class='about-page'] .content__section_gray {
   background-color: #E5E5E5; }
