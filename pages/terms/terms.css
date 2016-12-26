@@ -134,10 +134,7 @@ html, body {
   height: 100%;
   margin-right: 30px;
   display: inline-block;
-  border-bottom: 8px solid transparent;
   transition: border-bottom .3s ease-in-out; }
-[class='content'] .term-nav__item_active {
-  border-bottom: #007067 solid 6px; }
 [class='content'] .controller {
   display: none; }
 [class='content'] .rules {
@@ -153,7 +150,9 @@ html, body {
   font-size: .9rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px 0; }
+  padding: 15px 0 10px; }
+[class='content'] .term-nav__link_active {
+  border-bottom: #007067 solid 6px; }
 [class='content'] .article__header {
   color: #4F4F4F;
   font-size: 2.25rem;

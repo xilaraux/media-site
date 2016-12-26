@@ -262,12 +262,7 @@ html, body {
     height: 100%;
     margin-right: 30px;
     display: inline-block;
-    border-bottom: 8px solid transparent;
     transition: border-bottom .3s ease-in-out;
-  }
-
-  .term-nav__item_active {
-    border-bottom: $termNavActiveItem solid 6px;
   }
   
   // Make term-nav work...again.
@@ -295,9 +290,13 @@ html, body {
     font-weight: bold;
     text-decoration: none;
 
-    padding: 15px 0;
+    padding: 15px 0 10px;
 
     //@include verticalMiddle;
+  }
+
+  .term-nav__link_active {
+    border-bottom: $termNavActiveItem solid 6px;
   }
 
   // Article
