@@ -262,13 +262,6 @@ html, body {
     @extend .verticalAlignClass;
   }
 
-  .header_fix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-  }
-
   // Content
   .content {
     height: 100%;
@@ -324,21 +317,15 @@ html, body {
   }
 
   .content__section_callback {
-    display: none;
     max-width: 100%;
     width: 100%;
     height: 100%;
 
-    position: fixed;
-    top: 64px;
-    left: 0;
-    z-index: 1;
-
     background-color: #fff;
   }
-  
-  .content__section_visible {
-    display: block;
+
+  .content__section_invisible {
+    display: none;
   }
 
   @media all and (max-width: $tabletExtension) {
@@ -368,37 +355,6 @@ html, body {
     }
 
   }
-
-  //@media all and (max-width: 350px) {
-  //  .content__section_contacts {
-  //    padding-left: 19px;
-  //  }
-  //}
-  //
-  //@media all and (max-width: 650px) {
-  //  .content__section {
-  //    max-width: 100%;
-  //  }
-  //
-  //  .content__section_contacts {
-  //    padding-top: 30px;
-  //    height: 507px;
-  //  }
-  //
-  //  .content__section_form {
-  //    height: 565px;
-  //    padding: 16px 21px;
-  //  }
-  //
-  //  .content__section_map {
-  //    height: 569px;
-  //  }
-  //
-  //  .content__section_contacts, .content__section_form, .content__section_map {
-  //    width: 100%;
-  //    float: none;
-  //  }
-  //}
 
   // Article
   .article {
@@ -534,56 +490,10 @@ html, body {
 
   }
 
-  //@media all and (max-width: 650px) {
-  //  .article__header {
-  //    font-size: 24px;
-  //    width: 190px;
-  //    margin-bottom: 24px;
-  //  }
-  //
-  //  .article__text {
-  //    font-size: 14px;
-  //    width: 255px;
-  //    margin-bottom: 29px;
-  //  }
-  //
-  //  .article__text_link {
-  //    margin-bottom: 16px;
-  //  }
-  //
-  //  .article__text_slogan {
-  //    font-size: 18px;
-  //    margin-bottom: 12px;
-  //  }
-  //
-  //  .article__contacts {
-  //    margin-bottom: 57px;
-  //  }
-  //
-  //  .article__image {
-  //    width: 36px;
-  //    height: 36px;
-  //  }
-  //
-  //  .article__social {
-  //    margin-left: 0;
-  //    letter-spacing: 10px;
-  //  }
-  //}
-
   // Form section
   .form {
     line-height: 48px;
     max-width: 415px;
-    //margin: 0 auto;
-
-    //@media all and (max-width: 415px) {
-    //  max-width: 100%;
-    //}
-    //
-    //@media all and (max-width: 650px) {
-    //  margin: 0 auto;
-    //}
   }
 
   .form__header{
@@ -614,11 +524,6 @@ html, body {
     @include placeholderStyles {
       color: $formPlaceholderColor;
     }
-
-    //&::-webkit-input-placeholder {color: $formPlaceholderColor;}
-    //&::-moz-placeholder          {color: $formPlaceholderColor;} /* Firefox 19+ */
-    //&:-moz-placeholder           {color: $formPlaceholderColor;} /* Firefox 18- */
-    //&:-ms-input-placeholder      {color: $formPlaceholderColor;}
   }
 
   .form__input_message {
@@ -656,26 +561,11 @@ html, body {
 
   }
 
-  //@media all and (max-width: 650px) {
-  //  .form {
-  //    max-width: 100%;
-  //    margin: 0 auto;
-  //  }
-  //
-  //  .form__input_message {
-  //    height: 130px;
-  //  }
-  //}
-
   // Map
   .map {
     max-width: 512px;
     width: 100%;
     height: 100%;
-
-    //@media all and (max-width: 650px) {
-    //  max-width: 100%;
-    //}
   }
 
   .details {
@@ -727,13 +617,6 @@ html, body {
 
   }
 
-  //@media all and (max-width: 650px) {
-  //  .details {
-  //    left: 22px;
-  //    bottom: 39px;
-  //  }
-  //}
-
   // Callback button
   .callback {
 
@@ -768,12 +651,6 @@ html, body {
     }
 
   }
-
-  //@media all and (max-width: 650px) {
-  //  .callback__button {
-  //    display: block;
-  //  }
-  //}
 
   // Callback pop-up
   .callback-form {
@@ -814,11 +691,6 @@ html, body {
     @include placeholderStyles {
       color: $callbackFormPlaceholderColor;
     }
-
-    //&::-webkit-input-placeholder {color: $callbackFormPlaceholderColor;}
-    //&::-moz-placeholder          {color: $callbackFormPlaceholderColor;} /* Firefox 19+ */
-    //&:-moz-placeholder           {color: $callbackFormPlaceholderColor;} /* Firefox 18- */
-    //&:-ms-input-placeholder      {color: $callbackFormPlaceholderColor;}
   }
 
   .callback-form__input_last {
@@ -869,32 +741,6 @@ html, body {
     }
 
   }
-
-  //@media all and (max-width: 550px) {
-  //
-  //  .callback-form {
-  //    padding: 42px 20px;
-  //  }
-  //
-  //  .callback-form__header {
-  //    margin-bottom: 13px;
-  //
-  //    font-size: 24px;
-  //    line-height: 125%;
-  //    word-spacing: 3px;
-  //  }
-  //
-  //  .callback-form__input {
-  //    margin: 0 auto 3px;
-  //
-  //    font-size: 14px;
-  //  }
-  //
-  //  .callback-form__input_last {
-  //    margin-bottom: 32px;
-  //  }
-  //
-  //}
 
   // FOOTER
   .footer {

@@ -28,20 +28,25 @@ var callbackButtons = document.getElementsByClassName('callback');
 
 callbackButtons[0].addEventListener('click', _callbackActionHandler);
 callbackButtons[1].addEventListener('click', _callbackActionHandler);
+callbackButtons[2].addEventListener('click', _callbackActionHandler);
 
 function _callbackActionHandler(event) {
-    var callbackSection = document.getElementsByClassName('content__section_callback')[0];
-    var header = document.getElementsByClassName('header')[0];
+    var contentSections = document.getElementsByClassName('content__section');
 
-    header.classList.toggle('header_fix');
-    callbackSection.classList.toggle('content__section_visible');
+    for(var i = 0; i < contentSections.length; i++) {
+        contentSections[i].classList.toggle('content__section_invisible');
+    }
 }
 
-// Close callback popup
-document.getElementsByClassName('content__close')[0].addEventListener('click', function() {
-    var callbackSection = document.getElementsByClassName('content__section_callback')[0];
-    var header = document.getElementsByClassName('header')[0];
-
-    header.classList.toggle('header_fix');
-    callbackSection.classList.toggle('content__section_visible');
-});
+// // Close callback popup
+// document.getElementsByClassName('content__close')[0].addEventListener('click', function() {
+//     var callbackSection = document.getElementsByClassName('content__section_callback')[0];
+//     // var header = document.getElementsByClassName('header')[0];
+//     var contentSections = document.getElementsByClassName('content__section');
+//
+//     for(var i = 0; i < contentSections.length; i++) {
+//         contentSections[i].classList.toggle('content__section_invisible');
+//     }
+//     // header.classList.toggle('header_fix');
+//     // callbackSection.classList.toggle('content__section_visible');
+// });
