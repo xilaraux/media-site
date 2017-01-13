@@ -36,6 +36,8 @@ for(var i = 0; i < callbackButtons.length; i++) {
 }
 
 function _callbackActionHandler(event) {
+    console.log(event.target);
+
     var contentSections = document.getElementsByClassName('content__section');
 
     for(var i = 0; i < contentSections.length; i++) {

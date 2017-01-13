@@ -276,16 +276,6 @@ html, body {
     height: 100%;
   }
 
-  .content__close {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-
-    position: absolute;
-    right: 24px;
-    top: 26px;
-  }
-
   .content__section {
     margin: 0;
     padding: 0;
@@ -326,6 +316,18 @@ html, body {
 
   .content__section_invisible {
     display: none;
+  }
+
+  .content__close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 24px;
+    top: 26px;
+
+    z-index: 2;
   }
 
   @media all and (max-width: $tabletExtension) {
