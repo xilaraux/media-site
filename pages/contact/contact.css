@@ -43,10 +43,6 @@ html, body {
       width: 162px; }
     [class='contact-page'] .container__right {
       width: calc(100% - 162px); } }
-  @media all and (max-width: 650px) {
-    [class='contact-page'] .container__column {
-      width: 100%;
-      display: block; } }
   [class='contact-page'] .header {
     height: 64px;
     background-color: #00BEAE; }
@@ -86,7 +82,7 @@ html, body {
     font-size: 0; }
   [class='contact-page'] .header__list_open {
     display: none;
-    z-index: 1; }
+    z-index: 2; }
   [class='contact-page'] .header__item {
     height: 100%;
     transition: background-color 1s ease-in-out; }
@@ -127,11 +123,26 @@ html, body {
     background-repeat: no-repeat;
     background-position: 0px 0px;
     margin-right: 8px; }
+  [class='contact-page'] .header_fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; }
   [class='contact-page'] .content {
     height: 100%;
     background-color: #F2F2F2;
     overflow: hidden;
     position: relative; }
+  [class='contact-page'] .content__image {
+    width: 100%;
+    height: 100%; }
+  [class='contact-page'] .content__close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 26px; }
   [class='contact-page'] .content__section {
     margin: 0;
     padding: 0;
@@ -154,19 +165,21 @@ html, body {
     position: relative; }
   [class='contact-page'] .content__section_callback {
     display: none;
+    max-width: 100%;
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 64px;
+    z-index: 1;
     background-color: #fff; }
-  @media all and (max-width: 350px) {
-    [class='contact-page'] .content__section_contacts {
-      padding-left: 19px; } }
-  @media all and (max-width: 650px) {
+  [class='contact-page'] .content__section_visible {
+    display: block; }
+  @media all and (max-width: 750px) {
     [class='contact-page'] .content__section {
       max-width: 100%; }
     [class='contact-page'] .content__section_contacts {
       padding-top: 30px;
+      padding-left: 19px;
       height: 507px; }
     [class='contact-page'] .content__section_form {
       height: 565px;
@@ -240,7 +253,7 @@ html, body {
     letter-spacing: 12px; }
   [class='contact-page'] .article__item_social {
     display: inline-block; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
     [class='contact-page'] .article__header {
       font-size: 24px;
       width: 190px;
@@ -265,12 +278,6 @@ html, body {
   [class='contact-page'] .form {
     line-height: 48px;
     max-width: 415px; }
-    @media all and (max-width: 415px) {
-      [class='contact-page'] .form {
-        max-width: 100%; } }
-    @media all and (max-width: 650px) {
-      [class='contact-page'] .form {
-        margin: 0 auto; } }
   [class='contact-page'] .form__header {
     padding: 0;
     margin: 0;
@@ -314,16 +321,16 @@ html, body {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     cursor: pointer; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
+    [class='contact-page'] .form {
+      max-width: 100%;
+      margin: 0 auto; }
     [class='contact-page'] .form__input_message {
       height: 130px; } }
   [class='contact-page'] .map {
     max-width: 512px;
     width: 100%;
     height: 100%; }
-    @media all and (max-width: 650px) {
-      [class='contact-page'] .map {
-        max-width: 100%; } }
   [class='contact-page'] .details {
     width: 160px;
     height: 130px;
@@ -349,7 +356,9 @@ html, body {
   [class='contact-page'] .details__line {
     display: block;
     margin-bottom: 6px; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
+    [class='contact-page'] .map {
+      max-width: 100%; }
     [class='contact-page'] .details {
       left: 22px;
       bottom: 39px; } }
@@ -368,9 +377,72 @@ html, body {
     line-height: 56px; }
   [class='contact-page'] .callback__image {
     vertical-align: middle; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
     [class='contact-page'] .callback__button {
       display: block; } }
+  [class='contact-page'] .callback-form {
+    padding: 108px 218px; }
+  [class='contact-page'] .callback-form__header {
+    margin-bottom: 66px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    color: #4F4F4F; }
+  [class='contact-page'] .callback-form__input {
+    display: block;
+    max-width: 415px;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto 23px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #00BEAE;
+    border: 0;
+    border-bottom: 1px solid #C4C4C4;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    [class='contact-page'] .callback-form__input:focus {
+      outline: none; }
+    [class='contact-page'] .callback-form__input::-webkit-input-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .callback-form__input::-moz-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .callback-form__input:-moz-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .callback-form__input:-ms-input-placeholder {
+      color: #00BEAE; }
+  [class='contact-page'] .callback-form__input_last {
+    margin-bottom: 69px; }
+  [class='contact-page'] .callback-form__submit {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    max-width: 415px;
+    width: 100%;
+    height: 48px;
+    background-color: #FF5A5F;
+    cursor: pointer; }
+  @media all and (max-width: 750px) {
+    [class='contact-page'] .callback-form {
+      padding: 42px 20px; }
+    [class='contact-page'] .callback-form__header {
+      margin-bottom: 13px;
+      font-size: 24px;
+      line-height: 125%;
+      word-spacing: 3px; }
+    [class='contact-page'] .callback-form__input {
+      margin: 0 auto 3px;
+      font-size: 14px; }
+    [class='contact-page'] .callback-form__input_last {
+      margin-bottom: 32px; } }
   [class='contact-page'] .footer {
     height: 280px;
     width: 100%;

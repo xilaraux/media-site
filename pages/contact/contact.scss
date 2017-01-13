@@ -1,11 +1,3 @@
-//TODO:
-//1. Сделай кнопку обратного звонка нормальной - done
-//2. Хедер отредактируй что бы ничего не ползло
-//3. Клик для заказа обратного звонка сделай
-//4. Сделай окно обратного звонка
-//5. Настрой медиа запросы
-// 11-28
-
 // Imports
 @import "../../vendors/normalize.css";
 
@@ -36,9 +28,23 @@ $formSubmitColor: #FF5A5F;
 
 $detailsHeaderColor: #007067;
 
+$callbackFormInputBorder: #C4C4C4;
+$callbackFormPlaceholderColor: #00BEAE;
+$callbackFormSubmitBgc: #FF5A5F;
+
 $footerBgColor: #404040;
 
+// Extensions for media queries
+$tabletExtension: 750px;
+
 // Mixins
+@mixin placeholderStyles {
+  &::-webkit-input-placeholder { @content; }
+  &::-moz-placeholder          { @content; } /* Firefox 19+ */
+  &:-moz-placeholder           { @content; } /* Firefox 18- */
+  &:-ms-input-placeholder      { @content; }
+}
+
 @mixin verticalMiddle {
   &:before {
     content: '';
@@ -117,6 +123,7 @@ html, body {
     vertical-align: top;
   }
 
+  // Special media query for better behavior.
   @media all and (max-width: 880px) {
     .container__left {
       width: 162px;
@@ -124,13 +131,6 @@ html, body {
 
     .container__right {
       width: calc(100% - 162px);
-    }
-  }
-
-  @media all and (max-width: 650px) {
-    .container__column {
-      width: 100%;
-      display: block;
     }
   }
 
@@ -143,7 +143,7 @@ html, body {
   .header__logo {
     height: 100%;
     width: 142px;
-    //margin-left: 20px;
+    //margin-left: 20px; // works good for my desktop without responsive google dev tool.
     margin-left: 15px;
 
     background-image: url(../../images/logo.svg);
@@ -160,7 +160,7 @@ html, body {
   }
 
   .header__link_item {
-    //padding: 0px 19px;
+    //padding: 0px 19px; // works good for my desktop without responsive google dev tool.
     padding: 0px 20px;
 
     @include verticalMiddle;
@@ -188,7 +188,7 @@ html, body {
 
   .header__list_open {
     display: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   .header__item {
@@ -242,8 +242,8 @@ html, body {
     background-repeat: no-repeat;
     background-position: -1px -2px;
 
-    //margin-left: 14px;
-    //margin-right: 7px;
+    //margin-left: 14px; // works good for my desktop without responsive google dev tool.
+    //margin-right: 7px; // works good for my desktop without responsive google dev tool.
 
     margin-left: 12px;
     margin-right: 7px;
@@ -262,6 +262,13 @@ html, body {
     @extend .verticalAlignClass;
   }
 
+  .header_fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
   // Content
   .content {
     height: 100%;
@@ -269,6 +276,21 @@ html, body {
     overflow: hidden;
 
     position: relative;
+  }
+
+  .content__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content__close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 24px;
+    top: 26px;
   }
 
   .content__section {
@@ -292,42 +314,41 @@ html, body {
     height: 705px;
     padding: 41px 46px 32px 46px;
     float: right;
-    //margin-left: 3px;
     background-color: $sectionForm;
   }
 
   .content__section_map {
     height: 512px;
     float: left;
-    //margin-left: 3px;
-
     position: relative;
   }
 
   .content__section_callback {
     display: none;
+    max-width: 100%;
     width: 100%;
     height: 100%;
 
     position: fixed;
-    top: 0;
+    top: 64px;
+    z-index: 1;
 
     background-color: #fff;
   }
-
-  @media all and (max-width: 350px) {
-    .content__section_contacts {
-      padding-left: 19px;
-    }
+  
+  .content__section_visible {
+    display: block;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $tabletExtension) {
+
     .content__section {
       max-width: 100%;
     }
 
     .content__section_contacts {
       padding-top: 30px;
+      padding-left: 19px;
       height: 507px;
     }
 
@@ -344,7 +365,39 @@ html, body {
       width: 100%;
       float: none;
     }
+
   }
+
+  //@media all and (max-width: 350px) {
+  //  .content__section_contacts {
+  //    padding-left: 19px;
+  //  }
+  //}
+  //
+  //@media all and (max-width: 650px) {
+  //  .content__section {
+  //    max-width: 100%;
+  //  }
+  //
+  //  .content__section_contacts {
+  //    padding-top: 30px;
+  //    height: 507px;
+  //  }
+  //
+  //  .content__section_form {
+  //    height: 565px;
+  //    padding: 16px 21px;
+  //  }
+  //
+  //  .content__section_map {
+  //    height: 569px;
+  //  }
+  //
+  //  .content__section_contacts, .content__section_form, .content__section_map {
+  //    width: 100%;
+  //    float: none;
+  //  }
+  //}
 
   // Article
   .article {
@@ -441,7 +494,8 @@ html, body {
     display: inline-block;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $tabletExtension) {
+
     .article__header {
       font-size: 24px;
       width: 190px;
@@ -476,7 +530,45 @@ html, body {
       margin-left: 0;
       letter-spacing: 10px;
     }
+
   }
+
+  //@media all and (max-width: 650px) {
+  //  .article__header {
+  //    font-size: 24px;
+  //    width: 190px;
+  //    margin-bottom: 24px;
+  //  }
+  //
+  //  .article__text {
+  //    font-size: 14px;
+  //    width: 255px;
+  //    margin-bottom: 29px;
+  //  }
+  //
+  //  .article__text_link {
+  //    margin-bottom: 16px;
+  //  }
+  //
+  //  .article__text_slogan {
+  //    font-size: 18px;
+  //    margin-bottom: 12px;
+  //  }
+  //
+  //  .article__contacts {
+  //    margin-bottom: 57px;
+  //  }
+  //
+  //  .article__image {
+  //    width: 36px;
+  //    height: 36px;
+  //  }
+  //
+  //  .article__social {
+  //    margin-left: 0;
+  //    letter-spacing: 10px;
+  //  }
+  //}
 
   // Form section
   .form {
@@ -484,13 +576,13 @@ html, body {
     max-width: 415px;
     //margin: 0 auto;
 
-    @media all and (max-width: 415px) {
-      max-width: 100%;
-    }
-
-    @media all and (max-width: 650px) {
-      margin: 0 auto;
-    }
+    //@media all and (max-width: 415px) {
+    //  max-width: 100%;
+    //}
+    //
+    //@media all and (max-width: 650px) {
+    //  margin: 0 auto;
+    //}
   }
 
   .form__header{
@@ -518,10 +610,14 @@ html, body {
     padding: 15px;
     margin-bottom: 28px;
 
-    &::-webkit-input-placeholder {color: $formPlaceholderColor;}
-    &::-moz-placeholder          {color: $formPlaceholderColor;} /* Firefox 19+ */
-    &:-moz-placeholder           {color: $formPlaceholderColor;} /* Firefox 18- */
-    &:-ms-input-placeholder      {color: $formPlaceholderColor;}
+    @include placeholderStyles {
+      color: $formPlaceholderColor;
+    }
+
+    //&::-webkit-input-placeholder {color: $formPlaceholderColor;}
+    //&::-moz-placeholder          {color: $formPlaceholderColor;} /* Firefox 19+ */
+    //&:-moz-placeholder           {color: $formPlaceholderColor;} /* Firefox 18- */
+    //&:-ms-input-placeholder      {color: $formPlaceholderColor;}
   }
 
   .form__input_message {
@@ -546,11 +642,29 @@ html, body {
     cursor: pointer;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $tabletExtension) {
+
+    .form {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
     .form__input_message {
       height: 130px;
     }
+
   }
+
+  //@media all and (max-width: 650px) {
+  //  .form {
+  //    max-width: 100%;
+  //    margin: 0 auto;
+  //  }
+  //
+  //  .form__input_message {
+  //    height: 130px;
+  //  }
+  //}
 
   // Map
   .map {
@@ -558,9 +672,9 @@ html, body {
     width: 100%;
     height: 100%;
 
-    @media all and (max-width: 650px) {
-      max-width: 100%;
-    }
+    //@media all and (max-width: 650px) {
+    //  max-width: 100%;
+    //}
   }
 
   .details {
@@ -599,12 +713,25 @@ html, body {
     margin-bottom: 6px;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $tabletExtension) {
+
+    .map {
+      max-width: 100%;
+    }
+
     .details {
       left: 22px;
       bottom: 39px;
     }
+
   }
+
+  //@media all and (max-width: 650px) {
+  //  .details {
+  //    left: 22px;
+  //    bottom: 39px;
+  //  }
+  //}
 
   // Callback button
   .callback {
@@ -633,16 +760,140 @@ html, body {
     vertical-align: middle;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: $tabletExtension) {
+
     .callback__button {
       display: block;
     }
+
   }
+
+  //@media all and (max-width: 650px) {
+  //  .callback__button {
+  //    display: block;
+  //  }
+  //}
 
   // Callback pop-up
   .callback-form {
+    padding: 108px 218px;
+  }
+
+  .callback-form__header {
+    margin-bottom: 66px;
+
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    color: $regularHeaderColor;
+  }
+
+  .callback-form__input {
+    display: block;
+    max-width: 415px;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto 23px;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+
+    color: $callbackFormPlaceholderColor;
+
+    border: 0;
+    border-bottom: 1px solid $callbackFormInputBorder;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include placeholderStyles {
+      color: $callbackFormPlaceholderColor;
+    }
+
+    //&::-webkit-input-placeholder {color: $callbackFormPlaceholderColor;}
+    //&::-moz-placeholder          {color: $callbackFormPlaceholderColor;} /* Firefox 19+ */
+    //&:-moz-placeholder           {color: $callbackFormPlaceholderColor;} /* Firefox 18- */
+    //&:-ms-input-placeholder      {color: $callbackFormPlaceholderColor;}
+  }
+
+  .callback-form__input_last {
+    margin-bottom: 69px;
+  }
+
+  .callback-form__submit {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+
+    max-width: 415px;
+    width: 100%;
+    height: 48px;
+
+    background-color: $callbackFormSubmitBgc;
+    cursor: pointer;
+  }
+
+  @media all and (max-width: $tabletExtension) {
+
+    .callback-form {
+      padding: 42px 20px;
+    }
+
+    .callback-form__header {
+      margin-bottom: 13px;
+
+      font-size: 24px;
+      line-height: 125%;
+      word-spacing: 3px;
+    }
+
+    .callback-form__input {
+      margin: 0 auto 3px;
+
+      font-size: 14px;
+    }
+
+    .callback-form__input_last {
+      margin-bottom: 32px;
+    }
 
   }
+
+  //@media all and (max-width: 550px) {
+  //
+  //  .callback-form {
+  //    padding: 42px 20px;
+  //  }
+  //
+  //  .callback-form__header {
+  //    margin-bottom: 13px;
+  //
+  //    font-size: 24px;
+  //    line-height: 125%;
+  //    word-spacing: 3px;
+  //  }
+  //
+  //  .callback-form__input {
+  //    margin: 0 auto 3px;
+  //
+  //    font-size: 14px;
+  //  }
+  //
+  //  .callback-form__input_last {
+  //    margin-bottom: 32px;
+  //  }
+  //
+  //}
 
   // FOOTER
   .footer {

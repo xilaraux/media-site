@@ -26,9 +26,22 @@ function initMap() {
 // Callback popup
 var callbackButtons = document.getElementsByClassName('callback');
 
-callbackButtons[0].addEventListener('click', _callbackHandler);
-callbackButtons[1].addEventListener('click', _callbackHandler);
+callbackButtons[0].addEventListener('click', _callbackActionHandler);
+callbackButtons[1].addEventListener('click', _callbackActionHandler);
 
-function _callbackHandler(event) {
-    console.log(event);
+function _callbackActionHandler(event) {
+    var callbackSection = document.getElementsByClassName('content__section_callback')[0];
+    var header = document.getElementsByClassName('header')[0];
+
+    header.classList.toggle('header_fix');
+    callbackSection.classList.toggle('content__section_visible');
 }
+
+// Close callback popup
+document.getElementsByClassName('content__close')[0].addEventListener('click', function() {
+    var callbackSection = document.getElementsByClassName('content__section_callback')[0];
+    var header = document.getElementsByClassName('header')[0];
+
+    header.classList.toggle('header_fix');
+    callbackSection.classList.toggle('content__section_visible');
+});
