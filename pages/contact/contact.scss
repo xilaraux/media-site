@@ -160,7 +160,8 @@ html, body {
   }
 
   .header__link_item {
-    padding: 0px 19px;
+    //padding: 0px 19px;
+    padding: 0px 20px;
 
     @include verticalMiddle;
   }
@@ -241,7 +242,10 @@ html, body {
     background-repeat: no-repeat;
     background-position: -1px -2px;
 
-    margin-left: 14px;
+    //margin-left: 14px;
+    //margin-right: 7px;
+
+    margin-left: 12px;
     margin-right: 7px;
 
     @extend .verticalAlignClass;
