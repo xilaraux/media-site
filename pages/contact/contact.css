@@ -82,7 +82,7 @@ html, body {
     font-size: 0; }
   [class='contact-page'] .header__list_open {
     display: none;
-    z-index: 2; }
+    z-index: 3; }
   [class='contact-page'] .header__item {
     height: 100%;
     transition: background-color 1s ease-in-out; }
