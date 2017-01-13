@@ -95,18 +95,20 @@
 
                     <form action="https://echo.getpostman.com/get?test=123" method="get" class="form">
 
-                        <h3 class="form__header">Написать нам</h3>
 
-                        <input type="text" name="name" class="form__input" placeholder="Фамилия Имя">
+                        <div class="form__center">
+                            <h3 class="form__header">Написать нам</h3>
 
-                        <input type="text" name="phone" class="form__input" placeholder="Телефон">
+                            <input type="text" name="name" class="form__input" placeholder="Фамилия Имя">
 
-                        <input type="text" name="email" class="form__input" placeholder="E-mail">
+                            <input type="text" name="phone" class="form__input" placeholder="Телефон">
 
-                        <textarea name="message" id="" cols="30" rows="10" class="form__input form__input_message" placeholder="Сообщение"></textarea>
+                            <input type="text" name="email" class="form__input" placeholder="E-mail">
 
-                        <button type="submit" value="Отправить" class="form__submit">Отправить</button>
+                            <textarea name="message" id="" cols="30" rows="10" class="form__input form__input_message" placeholder="Сообщение"></textarea>
 
+                            <button type="submit" value="Отправить" class="form__submit">Отправить</button>
+                        </div>
                     </form>
 
                 </section>
@@ -136,20 +138,21 @@
 
                     <div class="content__close callback"><img src="../../images/contact-page/close.svg" alt="Close" class="content__image"></div>
 
-                    <form action="https://echo.getpostman.com/get?test=123" method="get" class="callback-form">
+                    <form action="https://echo.getpostman.com/get?test=123" method="get" class="form form_callback">
 
-                        <h3 class="callback-form__header">Оставьте Ваши данные и мы вам перезвоним в течении 5 минут!</h3>
+                        <h3 class="form__header form__header_callback">Оставьте Ваши данные и мы вам перезвоним в течении 5 минут!</h3>
 
-                        <input type="text" name="name" class="callback-form__input" placeholder="Введите ваше имя">
+                        <div class="form__center">
+                            <input type="text" name="name" class="form__input form__input_callback" placeholder="Введите ваше имя">
 
-                        <input type="text" name="phone" class="callback-form__input callback-form__input_last" placeholder="Номер телефона">
+                            <input type="text" name="phone" class="form__input form__input_callback form__input_last" placeholder="Номер телефона">
 
-                        <button type="submit" value="Заказать звонок" class="callback-form__submit">Заказать звонок</button>
+                            <button type="submit" value="Заказать звонок" class="form__submit form__submit_callback">Заказать звонок</button>
+                        </div>
 
                     </form>
 
                 </section>
-
 
             </div>
         </main>

@@ -269,6 +269,10 @@ html, body {
   [class='contact-page'] .form {
     line-height: 48px;
     max-width: 415px; }
+  [class='contact-page'] .form_callback {
+    max-width: 100%;
+    width: 100%;
+    padding: 142px 218px; }
   [class='contact-page'] .form__header {
     padding: 0;
     margin: 0;
@@ -276,6 +280,12 @@ html, body {
     font-size: 24px;
     font-weight: bold;
     color: white; }
+  [class='contact-page'] .form__header_callback {
+    margin-bottom: 66px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 120%;
+    color: #4F4F4F; }
   [class='contact-page'] .form__input {
     width: 100%;
     max-width: 415px;
@@ -283,12 +293,13 @@ html, body {
     font-size: 14px;
     color: #333333;
     border: 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;
     padding: 15px;
     margin-bottom: 28px;
     /* Firefox 19+ */
     /* Firefox 18- */ }
+    [class='contact-page'] .form__input:focus {
+      outline: none; }
     [class='contact-page'] .form__input::-webkit-input-placeholder {
       color: #828282; }
     [class='contact-page'] .form__input::-moz-placeholder {
@@ -297,27 +308,80 @@ html, body {
       color: #828282; }
     [class='contact-page'] .form__input:-ms-input-placeholder {
       color: #828282; }
+  [class='contact-page'] .form__input_callback {
+    margin: 0 auto 23px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #00BEAE;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #C4C4C4;
+    /* Firefox 19+ */
+    /* Firefox 18- */ }
+    [class='contact-page'] .form__input_callback:focus {
+      /* Firefox 19+ */
+      /* Firefox 18- */ }
+      [class='contact-page'] .form__input_callback:focus::-webkit-input-placeholder {
+        color: rgba(0, 190, 174, 0.5); }
+      [class='contact-page'] .form__input_callback:focus::-moz-placeholder {
+        color: rgba(0, 190, 174, 0.5); }
+      [class='contact-page'] .form__input_callback:focus:-moz-placeholder {
+        color: rgba(0, 190, 174, 0.5); }
+      [class='contact-page'] .form__input_callback:focus:-ms-input-placeholder {
+        color: rgba(0, 190, 174, 0.5); }
+    [class='contact-page'] .form__input_callback::-webkit-input-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .form__input_callback::-moz-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .form__input_callback:-moz-placeholder {
+      color: #00BEAE; }
+    [class='contact-page'] .form__input_callback:-ms-input-placeholder {
+      color: #00BEAE; }
+  [class='contact-page'] .form__input_last {
+    margin-bottom: 69px; }
   [class='contact-page'] .form__input_message {
     height: 261px;
     margin-bottom: 4px; }
+  [class='contact-page'] .form__center {
+    max-width: 415px;
+    width: 100%;
+    margin: 0 auto; }
   [class='contact-page'] .form__submit {
     max-width: 415px;
     width: 100%;
     height: 48px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     background-color: #FF5A5F;
     border: 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;
     cursor: pointer; }
+    [class='contact-page'] .form__submit:focus {
+      outline: none; }
+  [class='contact-page'] .form__submit_callback {
+    margin: 0 auto;
+    background-color: #FF5A5F; }
   @media all and (max-width: 750px) {
     [class='contact-page'] .form {
       max-width: 100%;
       margin: 0 auto; }
     [class='contact-page'] .form__input_message {
-      height: 130px; } }
+      height: 130px; }
+    [class='contact-page'] .form_callback {
+      padding: 66px 20px; }
+    [class='contact-page'] .form__header_callback {
+      margin-bottom: 13px;
+      font-size: 24px;
+      line-height: 125%;
+      word-spacing: 3px; }
+    [class='contact-page'] .form__input_callback {
+      margin: 0 auto 3px;
+      font-size: 14px; }
+    [class='contact-page'] .form__input_last {
+      margin-bottom: 32px; } }
   [class='contact-page'] .map {
     max-width: 512px;
     width: 100%;
@@ -371,69 +435,6 @@ html, body {
   @media all and (max-width: 750px) {
     [class='contact-page'] .callback__button {
       display: block; } }
-  [class='contact-page'] .callback-form {
-    padding: 108px 218px; }
-  [class='contact-page'] .callback-form__header {
-    margin-bottom: 66px;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 120%;
-    color: #4F4F4F; }
-  [class='contact-page'] .callback-form__input {
-    display: block;
-    max-width: 415px;
-    width: 100%;
-    height: 48px;
-    margin: 0 auto 23px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #00BEAE;
-    border: 0;
-    border-bottom: 1px solid #C4C4C4;
-    /* Firefox 19+ */
-    /* Firefox 18- */ }
-    [class='contact-page'] .callback-form__input:focus {
-      outline: none; }
-    [class='contact-page'] .callback-form__input::-webkit-input-placeholder {
-      color: #00BEAE; }
-    [class='contact-page'] .callback-form__input::-moz-placeholder {
-      color: #00BEAE; }
-    [class='contact-page'] .callback-form__input:-moz-placeholder {
-      color: #00BEAE; }
-    [class='contact-page'] .callback-form__input:-ms-input-placeholder {
-      color: #00BEAE; }
-  [class='contact-page'] .callback-form__input_last {
-    margin-bottom: 69px; }
-  [class='contact-page'] .callback-form__submit {
-    display: block;
-    margin: 0 auto;
-    border: 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    max-width: 415px;
-    width: 100%;
-    height: 48px;
-    background-color: #FF5A5F;
-    cursor: pointer; }
-  @media all and (max-width: 750px) {
-    [class='contact-page'] .callback-form {
-      padding: 42px 20px; }
-    [class='contact-page'] .callback-form__header {
-      margin-bottom: 13px;
-      font-size: 24px;
-      line-height: 125%;
-      word-spacing: 3px; }
-    [class='contact-page'] .callback-form__input {
-      margin: 0 auto 3px;
-      font-size: 14px; }
-    [class='contact-page'] .callback-form__input_last {
-      margin-bottom: 32px; } }
   [class='contact-page'] .footer {
     height: 280px;
     width: 100%;

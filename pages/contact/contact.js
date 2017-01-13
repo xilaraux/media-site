@@ -8,7 +8,12 @@ function initMap() {
     var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
         zoom: 15,
         center: {lat: 50.454972, lng: 30.511233},
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: false
     });
 
     var latlng = (new google.maps.Geocoder()).geocode({'address': 'вулиця Велика Житомирська, 25/2'}, function(results, status) {
@@ -26,9 +31,9 @@ function initMap() {
 // Callback popup
 var callbackButtons = document.getElementsByClassName('callback');
 
-callbackButtons[0].addEventListener('click', _callbackActionHandler);
-callbackButtons[1].addEventListener('click', _callbackActionHandler);
-callbackButtons[2].addEventListener('click', _callbackActionHandler);
+for(var i = 0; i < callbackButtons.length; i++) {
+    callbackButtons[i].addEventListener('click', _callbackActionHandler);
+}
 
 function _callbackActionHandler(event) {
     var contentSections = document.getElementsByClassName('content__section');
@@ -37,16 +42,3 @@ function _callbackActionHandler(event) {
         contentSections[i].classList.toggle('content__section_invisible');
     }
 }
-
-// // Close callback popup
-// document.getElementsByClassName('content__close')[0].addEventListener('click', function() {
-//     var callbackSection = document.getElementsByClassName('content__section_callback')[0];
-//     // var header = document.getElementsByClassName('header')[0];
-//     var contentSections = document.getElementsByClassName('content__section');
-//
-//     for(var i = 0; i < contentSections.length; i++) {
-//         contentSections[i].classList.toggle('content__section_invisible');
-//     }
-//     // header.classList.toggle('header_fix');
-//     // callbackSection.classList.toggle('content__section_visible');
-// });
