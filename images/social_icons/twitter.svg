@@ -1,0 +1,99 @@
+<svg width="51" height="51" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>twitter</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1955 -23)" figma:type="canvas">
+<g id="twitter" style="mix-blend-mode:normal;" figma:type="symbol">
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path0_fill" transform="translate(1955.84 23.9198)" fill="#21A8EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="twitter-logo-silhouette" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(1972.28 40.9731)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+</g>
+<mask id="mask1_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask1_alpha)" figma:type="frame">
+</g>
+<mask id="mask2_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask2_alpha)" figma:type="frame">
+</g>
+<mask id="mask3_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask3_alpha)" figma:type="frame">
+</g>
+<mask id="mask4_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask4_alpha)" figma:type="frame">
+</g>
+<mask id="mask5_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask5_alpha)" figma:type="frame">
+</g>
+<mask id="mask6_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask6_alpha)" figma:type="frame">
+</g>
+<mask id="mask7_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask7_alpha)" figma:type="frame">
+</g>
+<mask id="mask8_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask8_alpha)" figma:type="frame">
+</g>
+<mask id="mask9_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask9_alpha)" figma:type="frame">
+</g>
+<mask id="mask10_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask10_alpha)" figma:type="frame">
+</g>
+<mask id="mask11_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask11_alpha)" figma:type="frame">
+</g>
+<mask id="mask12_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask12_alpha)" figma:type="frame">
+</g>
+<mask id="mask13_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask13_alpha)" figma:type="frame">
+</g>
+<mask id="mask14_alpha" mask-type="alpha">
+<path d="M 1972.28 39.3001L 1975.23 39.3001L 1975.23 42.2125L 1972.28 42.2125L 1972.28 39.3001Z" fill="#FFFFFF"/>
+</mask>
+<g id="Group" style="mix-blend-mode:normal;" mask="url(#mask14_alpha)" figma:type="frame">
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 50 25C 50 38.8071 38.8071 50 25 50C 11.1929 50 0 38.8071 0 25C 0 11.1929 11.1929 0 25 0C 38.8071 0 50 11.1929 50 25Z"/>
+<path id="path1_fill" d="M 18 1.71299C 17.3375 2.00368 16.6266 2.20082 15.8797 2.28883C 16.6424 1.83662 17.2261 1.11935 17.5028 0.267301C 16.7874 0.686076 15.9978 0.99016 15.1565 1.155C 14.4827 0.443297 13.5244 5.51054e-08 12.4615 5.51054e-08C 10.4222 5.51054e-08 8.76879 1.63727 8.76879 3.65545C 8.76879 3.94168 8.80141 4.22124 8.86441 4.48857C 5.796 4.33596 3.07515 2.88025 1.25412 0.668252C 0.935794 1.20734 0.754706 1.83549 0.754706 2.50601C 0.754706 3.77463 1.40709 4.89398 2.39691 5.54886C 1.79176 5.52883 1.22262 5.36399 0.724353 5.08999L 0.724353 5.13565C 0.724353 6.90657 1.99762 8.38456 3.68591 8.72094C 3.37659 8.80336 3.05041 8.84903 2.71297 8.84903C 2.47453 8.84903 2.24394 8.82564 2.01785 8.78108C 2.488 10.2346 3.85126 11.2915 5.46647 11.3205C 4.20332 12.3007 2.61062 12.8832 0.880706 12.8832C 0.582647 12.8832 0.289059 12.8654 1.39716e-12 12.8331C 1.63432 13.8722 3.57459 14.4781 5.65994 14.4781C 12.4525 14.4781 16.1655 8.90696 16.1655 4.07536L 16.1531 3.60201C 16.8786 3.08963 17.5062 2.44587 18 1.71299Z"/>
+</defs>
+</svg>
