@@ -25,6 +25,7 @@ $footerBgColor: #404040;
 
 // Extensions for media queries
 $tabletExtension: 750px;
+$littleDesktopExtension: 1000px;
 
 // Mixins
 @mixin placeholderStyles {
@@ -268,7 +269,22 @@ html, body {
   }
 
   .content__section_questions {
-    padding: 36px 107px 0 57px;
+    width: 100%;
+    padding: 36px 107px 17px 57px;
+    overflow: hidden;
+  }
+
+  @media all and (max-width: $littleDesktopExtension) {
+    .content__section_questions {
+      padding-left: 25px;
+      padding-right: 10px;
+    }
+  }
+
+  @media all and (max-width: $tabletExtension) {
+    .content__section_questions {
+      padding: 40px 21px 17px 19px;
+    }
   }
 
   // Search block
@@ -280,7 +296,25 @@ html, body {
   }
 
   .search__paddings {
-    padding: 22px 21px 25px 75px;
+    padding: 22px 5px 25px 75px; // 21px
+  }
+
+  @media all and (max-width: $littleDesktopExtension) {
+    .search__paddings {
+      padding-left: 25px;
+      padding-right: 10px;
+    }
+  }
+
+  @media all and (max-width: $tabletExtension) {
+    .search {
+      height: 176px;
+    }
+
+    .search__paddings {
+      //padding: 32px 31px 27px 20px; // works good for pixel-perfect but i think there is some bug
+      padding: 32px 20px 27px 20px;
+    }
   }
 
   // Search-help
@@ -291,9 +325,10 @@ html, body {
   }
 
   .search-help__slogan {
-    width: 133px;
+    //width: 133px;
     height: 100%;
-    margin-right: 64px;
+    width: 21%;
+    //margin-right: 64px;
 
     display: inline-block;
     vertical-align: middle;
@@ -328,12 +363,13 @@ html, body {
     display: inline-block;
     vertical-align: middle;
 
-    max-width: 585px;
-    width: 100%;
-    height: 100%;
+    width: 62%;
+    //height: 100%;
+    height: 48px;
 
     padding: 0 14px;
     word-spacing: 1px;
+    border: 0;
 
     font-size: 14px;
     color: $regularTextColor;
@@ -357,9 +393,9 @@ html, body {
     display: inline-block;
     vertical-align: middle;
 
-    max-width: 146px;
-    width: 100%;
-    height: 100%;
+    width: 16%;
+    //height: 100%;
+    height: 48px;
 
     font-size: 14px;
     font-weight: bold;
@@ -369,9 +405,41 @@ html, body {
     background-color: $searchButtonBgc;
   }
 
+  @media all and (max-width: $tabletExtension) {
+    .search-help {
+      height: 100%;
+    }
+    
+    .search-help__slogan {
+      display: none;
+    }
+
+    .search-help__input {
+      margin-bottom: 21px;
+    }
+
+    .search-help__input, .search-help__submit {
+      width: 100%;
+    }
+  }
+
   // Categories
   .categories {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    float: left;
+  }
+  
+  .categories__title {
+    margin: 0;
+    padding: 0;
+    display: none;
+    margin-bottom: 28px;
 
+    font-size: 18px;
+    font-weight: normal;
+    color: $regularTextColor;
   }
 
   .categories__list {
@@ -425,6 +493,104 @@ html, body {
 
     &:after {
       opacity: 0;
+    }
+  }
+
+  @media all and (max-width: $littleDesktopExtension) {
+    .categories {
+      width: 30%;
+    }
+  }
+
+  @media all and (max-width: $tabletExtension) {
+    .categories {
+      float: none;
+      width: 100%;
+    }
+
+    .categories__title {
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .categories__link {
+      padding-left: 9px;
+      left: -10px;
+    }
+  }
+
+  // FAQ
+  .faq {
+    //max-width: 645px;
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+  }
+
+  .faq__header {
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 0;
+
+    font-size: 24px;
+    font-weight: normal;
+    color: $regularTextColor;
+  }
+  
+  .faq__text {
+    text-transform: capitalize;
+  }
+
+  @media all and (max-width: $littleDesktopExtension) {
+    .faq {
+      width: 70%;
+    }
+
+    .faq__header {
+      font-size: 18px;
+    }
+  }
+
+  @media all and (max-width: $tabletExtension) {
+    .faq {
+      float: none;
+      width: 100%;
+    }
+
+    .faq__header {
+      margin-bottom: 20px;
+    }
+
+    // !!!!
+    .faq__category {
+      display: none;
+    }
+  }
+
+  // Question
+  .question {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+
+  .question__title {
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .question__answer {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 142%;
+  }
+
+  @media all and (max-width: $tabletExtension) {
+    .question__title {
+      margin-bottom: 15px;
     }
   }
 
