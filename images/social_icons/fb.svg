@@ -1,15 +1,11 @@
-<svg width="51" height="51" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>Fb logo</title>
+<svg width="15" height="19" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>facebook-letter-logo</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-1893 -23)" figma:type="canvas">
-<g id="Fb logo" style="mix-blend-mode:normal;" figma:type="symbol">
-<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
-<use xlink:href="#path0_fill" transform="translate(1893.68 23.9198)" fill="#395799" style="mix-blend-mode:normal;"/>
-</g>
+<g id="Canvas" transform="translate(-1908 -38)" figma:type="canvas">
 <g id="facebook-letter-logo" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Facebook" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path1_fill" transform="translate(1913.66 38.4326)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path0_fill" transform="translate(1913.66 38.4326)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 <mask id="mask0_alpha" mask-type="alpha">
@@ -89,9 +85,7 @@
 </g>
 </g>
 </g>
-</g>
 <defs>
-<path id="path0_fill" d="M 50 25C 50 38.8071 38.8071 50 25 50C 11.1929 50 0 38.8071 0 25C 0 11.1929 11.1929 0 25 0C 38.8071 0 50 11.1929 50 25Z"/>
-<path id="path1_fill" d="M 1.88359 3.58112C 1.88359 4.0471 1.88359 6.12696 1.88359 6.12696L -3.70984e-08 6.12696L -3.70984e-08 9.24003L 1.88359 9.24003L 1.88359 18.491L 5.75289 18.491L 5.75289 9.24029L 8.34937 9.24029C 8.34937 9.24029 8.59255 7.7476 8.71042 6.11548C 8.37247 6.11548 5.76753 6.11548 5.76753 6.11548C 5.76753 6.11548 5.76753 4.3044 5.76753 3.98695C 5.76753 3.66882 6.1894 3.24088 6.60636 3.24088C 7.02254 3.24088 7.90093 3.24088 8.7145 3.24088C 8.7145 2.81703 8.7145 1.35254 8.7145 1.11224e-08C 7.62841 1.11224e-08 6.3928 1.11224e-08 5.84815 1.11224e-08C 1.78795 -0.000214944 1.88359 3.11595 1.88359 3.58112Z"/>
+<path id="path0_fill" d="M 1.88359 3.58112C 1.88359 4.0471 1.88359 6.12696 1.88359 6.12696L -3.70984e-08 6.12696L -3.70984e-08 9.24003L 1.88359 9.24003L 1.88359 18.491L 5.75289 18.491L 5.75289 9.24029L 8.34937 9.24029C 8.34937 9.24029 8.59255 7.7476 8.71042 6.11548C 8.37247 6.11548 5.76753 6.11548 5.76753 6.11548C 5.76753 6.11548 5.76753 4.3044 5.76753 3.98695C 5.76753 3.66882 6.1894 3.24088 6.60636 3.24088C 7.02254 3.24088 7.90093 3.24088 8.7145 3.24088C 8.7145 2.81703 8.7145 1.35254 8.7145 1.11224e-08C 7.62841 1.11224e-08 6.3928 1.11224e-08 5.84815 1.11224e-08C 1.78795 -0.000214944 1.88359 3.11595 1.88359 3.58112Z"/>
 </defs>
 </svg>

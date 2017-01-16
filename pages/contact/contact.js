@@ -1,5 +1,5 @@
 // Mobile burger
-document.getElementsByClassName('header__burger')[0].addEventListener('click', function() {
+document.querySelector('.header__burger').addEventListener('click', function() {
     document.querySelector('.header__list').classList.toggle('header__list_open');
 });
 
@@ -13,10 +13,10 @@ function initMap() {
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
-        draggable: false
     });
 
-    var latlng = (new google.maps.Geocoder()).geocode({'address': 'вулиця Велика Житомирська, 25/2'}, function(results, status) {
+    var latlng = (new google.maps.Geocoder())
+        .geocode({'address': 'вулиця Велика Житомирська, 25/2'}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             var marker = new google.maps.Marker({
                 map: map,
