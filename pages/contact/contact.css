@@ -24,7 +24,8 @@ html, body {
     max-width: 1024px;
     height: 100%;
     margin: 0 auto;
-    font-size: 0; }
+    font-size: 0;
+    overflow: hidden; }
   [class='contact-page'] .container__left {
     width: 50%;
     height: 100%;
