@@ -413,7 +413,7 @@ html, body {
     transition: color .5s ease;
 
     &:hover {
-      color: rgba($orangered, .8);
+      color: mix($orangered, #000, 90%); // rgba($orangered, .8);
     }
   }
 
@@ -660,7 +660,7 @@ html, body {
     }
 
     &:hover {
-      background-color: rgba($formSubmitColor, .9);
+      background-color: mix($orangered, #000, 90%); // rgba($formSubmitColor, .9);
     }
   }
 

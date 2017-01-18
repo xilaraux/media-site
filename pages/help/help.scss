@@ -375,7 +375,7 @@ html, body {
       outline: none;
 
       @include placeholderStyles {
-        color: rgba($regularTextColor, 0.5);
+        color: rgba($regularTextColor, .5);
       }
     }
 

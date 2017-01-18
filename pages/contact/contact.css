@@ -220,7 +220,7 @@ html, body {
     height: 29px;
     transition: color .5s ease; }
     [class='contact-page'] .article__link_red:hover {
-      color: rgba(255, 90, 95, 0.8); }
+      color: #e65156; }
   [class='contact-page'] .article__link_social {
     height: 100%;
     border-radius: 50%;
@@ -403,7 +403,7 @@ html, body {
     [class='contact-page'] .form__submit:focus {
       outline: none; }
     [class='contact-page'] .form__submit:hover {
-      background-color: rgba(255, 90, 95, 0.9); }
+      background-color: #e65156; }
   [class='contact-page'] .form__submit_callback {
     margin: 0 auto;
     background-color: #FF5A5F; }
