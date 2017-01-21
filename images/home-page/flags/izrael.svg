@@ -1,0 +1,24 @@
+<svg width="30" height="39" viewBox="0 0 30 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2821 -284)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 40" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1 2.67189e-24 -2.67189e-24 1 -2820.07 287.029)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-2820.07 284.606)" fill="#007DC5" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-2813.07 291.606)" fill="#007DC5" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 29 0L 29 35L 14.5 25L 0 35L 0 0Z"/>
+<path id="path1_fill" d="M 29 3.44649e-06L 0 3.44649e-06L 0 4L 29 4L 29 3.44649e-06Z"/>
+<path id="path2_fill" d="M 10.032 4.53116L 15 4.53116L 12.5401 8.98743L 15 13.4186L 10.032 13.4186L 7.5 18L 4.94375 13.4186L 2.36374e-06 13.4186L 2.43568 8.98743L 2.36374e-06 4.53116L 4.94375 4.53116L 7.5 -6.07601e-06L 10.032 4.53116ZM 3.49678 8.9872L 5.47419 12.542L 9.52558 12.542L 11.5032 8.9872L 9.52558 5.43238L 5.47419 5.43238L 3.49678 8.9872ZM 5.95666 4.53116L 8.99539 4.53116L 7.50024 1.7524L 5.95666 4.53116ZM 12.0339 8.01085L 13.4809 5.43238L 10.5387 5.43238L 12.0339 8.01085ZM 10.5869 12.542L 13.4567 12.542L 12.0339 9.93841L 10.5869 12.542ZM 6.07722 13.4183L 7.5 16.122L 9.06754 13.4183L 6.07722 13.4183ZM 2.96634 9.93841L 1.47119 12.542L 4.46151 12.542L 2.96634 9.93841ZM 4.41309 5.43238L 1.51913 5.43238L 2.96612 8.01085L 4.41309 5.43238Z"/>
+</defs>
+</svg>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+
+<div class="home-page">
+
+    <section class="page-container">
+
+        <header class="header">
+            <div class="container">
+
+                <div class="container__left">
+                    <div class="header__logo">
+                        <a class="header__link" href="#"></a>
+                    </div>
+                </div>
+
+                <div class="container__right">
+                    <nav class="header__nav">
+
+                        <a href="#" class="header__link header__burger"><img src="../../images/burger.svg" alt="Menu" class="header__icon" /></a>
+
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link header__link_item" href="#">
+                                    <span class="header__text">О меддиа</span>
+                                    <span class="header__pic-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link header__link_item">
+                                    <span class="header__text">РУБ | РУС</span>
+                                    <span class="header__pic-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link header__link_item">
+                                    <span class="header__text">Войти</span>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link header__link_item">
+                                    <span class="header__pic-heart"></span>
+                                    <span class="header__text">5</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!--FIX: setion_slider ???-->
+            <section class="slider section section_slider" style="background: url(../../images/home-page/header__slider_background-black.png) repeat, url(../../images/home-page/header__slider.png) no-repeat; background-size: cover;">
+                <div class="container">
+
+                    <h1 class="section__header">MedDia — Ваше здоровье в надежных руках.</h1>
+
+                    <form action="https://echo.getpostman.com/get?test=123" method="get" class="form">
+                        <input type="text" name="query" class="form__input" placeholder="|заболевание, процедура, доктор или клиника">
+                        <input type="text" name="country" class="form__input form__input_country" placeholder="Все страны">
+
+                        <button type="submit" value="Найти" class="form__submit">Найти</button>
+                    </form>
+
+                    <!--FIX: slider__panel ???-->
+                    <section class="slider__panel section__content">
+
+                        <a href="#" class="slider__play">
+                            <img src="../../images/home-page/play.svg" alt="Show" class="slider__pic">
+                        </a>
+
+                        <p class="section__text">Посмотреть, как работает MedDia</p>
+
+                        <ul class="slider__panel">
+                            <li class="slider__dot">
+                                <a href="#" class="slider__toggle slider__toggle_active"></a>
+                            </li>
+                            <li class="slider__dot">
+                                <a href="#" class="slider__toggle"></a>
+                            </li>
+                            <li class="slider__dot">
+                                <a href="#" class="slider__toggle"></a>
+                            </li>
+                            <li class="slider__dot">
+                                <a href="#" class="slider__toggle"></a>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                </div>
+            </section>
+
+            <section class="section section_countries">
+                <div class="container">
+
+                    <h2 class="section__header">Выбрать лечение по всему миру</h2>
+
+                    <section class="section__content">
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/izrael.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/izrael.svg" alt="Izrael">
+                                </div>
+                                <h3 class="article__title">Израиль</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/hungary.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/empty.svg" alt="Hungary">
+                                </div>
+                                <h3 class="article__title">Венгрия</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/mexico.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/mexico.svg" alt="Mexico">
+                                </div>
+                                <h3 class="article__title">Мексика</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                    </section>
+
+                    <section class="section__content">
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/thailand.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/thailand.svg" alt="Thailand">
+                                </div>
+                                <h3 class="article__title">Таиланд</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/south-corea.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/empty.svg" alt="South Corea">
+                                </div>
+                                <h3 class="article__title">Южная Корея</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_country" style="background-image: url(../../images/home-page/countries/germany.png); background-repeat: no-repeat; background-size: cover;">
+                                <div class="article__icon">
+                                    <img class="article__image"  src="../../images/home-page/flags/empty.svg" alt="Germany">
+                                </div>
+                                <h3 class="article__title">Германия</h3>
+                                <p class="article__text">онкология</p>
+                                <p class="article__text">стоматология</p>
+                            </article>
+                        </a>
+                    </section>
+
+                </div>
+            </section>
+
+            <section class="section section_treatment">
+                <div class="container">
+                    <h2 class="section__header">Найти лечение среди популярных  специальностей</h2>
+
+                    <section class="section__content">
+                        <a href="#" class="section__link">
+                            <article class="article article_treatment">
+                                <section class="article__cover" style="background-image: url(../../images/home-page/treatment/surgery.png); background-repeat: no-repeat; background-size: cover;"></section>
+                                <section class="article__content">
+                                    <h3 class="article__title">Пластическая Хирургия</h3>
+                                    <p class="article__text">Подтяжка лица</p>
+                                    <p class="article__text">Б иотерапия</p>
+                                    <p class="article__icon">
+                                        <img class="article__image" src="../../images/home-page/arrow.svg" alt="Go">
+                                    </p>
+                                </section>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_treatment">
+                                <section class="article__cover" style="background-image: url(../../images/home-page/treatment/ophthalmology.png); background-repeat: no-repeat; background-size: cover;"></section>
+                                <section class="article__content">
+                                    <h3 class="article__title">Офтальмология</h3>
+                                    <p class="article__text">Замена хрусталика</p>
+                                    <p class="article__text">Операции на глаза</p>
+                                    <p class="article__icon">
+                                        <img class="article__image" src="../../images/home-page/arrow.svg" alt="Go">
+                                    </p>
+                                </section>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_treatment">
+                                <section class="article__cover" style="background-image: url(../../images/home-page/treatment/ortopedia.png); background-repeat: no-repeat; background-size: cover;"></section>
+                                <section class="article__content">
+                                    <h3 class="article__title">Ортопедия</h3>
+                                    <p class="article__text">Замена тазобедренного сустава</p>
+                                    <p class="article__text">Замена коленного сустава</p>
+                                    <p class="article__icon">
+                                        <img class="article__image" src="../../images/home-page/arrow.svg" alt="Go">
+                                    </p>
+                                </section>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_treatment">
+                                <section class="article__cover" style="background-image: url(../../images/home-page/treatment/oncology.png); background-repeat: no-repeat; background-size: cover;"></section>
+                                <section class="article__content">
+                                    <h3 class="article__title ">Онкология</h3>
+                                    <p class="article__text">Рак поджелудочной</p>
+                                    <p class="article__text">Химиотерапия</p>
+                                    <p class="article__icon">
+                                        <img class="article__image" src="../../images/home-page/arrow.svg" alt="Go">
+                                    </p>
+                                </section>
+                            </article>
+                        </a>
+                        <a href="#" class="section__link">
+                            <article class="article article_treatment">
+                                <section class="article__cover" style="background-image: url(../../images/home-page/treatment/dentistry.png); background-repeat: no-repeat; background-size: cover;"></section>
+                                <section class="article__content  article__content_withoutBorder">
+                                    <h3 class="article__title">Стоматология</h3>
+                                    <p class="article__text">Имплантанты</p>
+                                    <p class="article__text">Консультации</p>
+                                    <p class="article__icon">
+                                        <img class="article__image" src="../../images/home-page/arrow.svg" alt="Go">
+                                    </p>
+                                </section>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section section_promo">
+                <div class="container">
+
+                    <h2 class="section__header">Преимущества MedDia для признанных  клиник и врачей <span class="section__mark section__mark_big">*</span></h2>
+
+                    <p class="section__slogan">ЗАРЕГИСТРИРУЙТЕ ВАШУ ПРАКТИКУ НА MEDDIA</p>
+
+                    <section class="section__content">
+
+                        <article class="article article_promo">
+
+                            <p class="article__pic">
+                                <img src="../../images/home-page/promo/new-patients.svg" alt="New patients" class="article__image">
+                            </p>
+
+                            <h3 class="article__title">Привлечь новых пациентов</h3>
+
+                        </article>
+
+                        <article class="article article_promo">
+
+                            <p class="article__pic">
+                                <img src="../../images/home-page/promo/reputation.svg" alt="Reputation" class="article__image">
+                            </p>
+
+                            <h3 class="article__title">Построить и укрепить репутацию онлайн</h3>
+
+                        </article>
+
+                        <article class="article article_promo">
+
+                            <p class="article__pic">
+                                <img src="../../images/home-page/promo/experience.svg" alt="Experience" class="article__image">
+                            </p>
+
+                            <h3 class="article__title">Обеспечить премиум опыт своим пациентам</h3>
+
+                        </article>
+
+                    </section>
+
+                    <section class="section__content">
+                        <a href="#" class="section__link">Начать практику с Меддиа</a>
+                    </section>
+
+                </div>
+            </section>
+
+            <section class="section section_organizations">
+                <div class="container">
+
+                    <h4 class="section__slogan">
+                        <span class="section__mark section__mark_small">*</span>
+                        На сайте MEDIGO размещена информация только о больницах и клиниках, получивших медицинские сертификаты и аккредитацию самых авторитетных международных обществ.
+                    </h4>
+
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                        <li class="section__item">
+                            <span class="section__pic"></span>
+                            <span class="section__description">Care Quality Commision (CQC)</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="section section_patients">
+                <div class="container">
+
+                    <h2 class="section__header">MedDia Пациентам</h2>
+
+                    <section class="section__content">
+                        <article class="article article_patients">
+                            <div class="article__pic">
+                                <img class="article__image"  src="../../images/home-page/patients/patient.svg" alt="Выбор">
+                            </div>
+                            <h3 class="article__title">Выбор</h3>
+                            <p class="article__text">
+                                Oгромный выбор многопрофильных и специализированных клиник
+                            </p>
+                        </article>
+
+                        <article class="article article_patients">
+                            <div class="article__pic">
+                                <img class="article__image"  src="../../images/home-page/patients/file.svg" alt="Выбор">
+                            </div>
+                            <h3 class="article__title">Надёжность</h3>
+                            <p class="article__text">
+                                Доступ к лицензиям и другим документам, принятых в системе сертификации конкретного государства
+                            </p>
+                        </article>
+
+                        <article class="article article_patients">
+                            <div class="article__pic">
+                                <img class="article__image"  src="../../images/home-page/patients/patient.svg" alt="Информативность">
+                            </div>
+                            <h3 class="article__title">Информативность</h3>
+                            <p class="article__text">
+                                Подробное описание услуг и особенностей обслуживания в разных медицинских центрах
+                            </p>
+                        </article>
+
+                        <article class="article article_patients">
+                            <div class="article__pic">
+                                <img class="article__image"  src="../../images/home-page/patients/file.svg" alt="Защита">
+                            </div>
+                            <h3 class="article__title">Защита</h3>
+                            <p class="article__text">
+                                Специальная система защиты данных от взлома
+                            </p>
+                        </article>
+                    </section>
+
+                </div>
+            </section>
+
+            <section class="section section_info">
+                <div class="container">
+
+                    <section class="section__content">
+                        <h3 class="section__slogan">МedDia работает на прямую с ведущими клиниками.</h3>
+
+                        <p class="section__text">Наши услуги для вас, мы оказываем консультации по соглашению с клиниками-партнерами.</p>
+                    </section>
+
+                    <section class="section__content section__content_right">
+                        <a href="#" class="section__link">
+                            УЗНАТЬ БОЛЬШЕ
+                        </a>
+                    </section>
+
+
+                </div>
+            </section>
+
+            <section class="section section_reviews slider slider_reviews">
+                <div class="container">
+
+                    <h2 class="section__header">Отзывы наших пациентов</h2>
+
+                    <section class="section__content">
+
+                        <article class="article article_review">
+
+                            <section class="article__content">
+                                <!--<section class="article__content article__content_left">-->
+                                    <p class="article__title">Александра Л.</p>
+                                    <time class="article__time" datetime="2016-08">Август 2016</time>
+                                <!--</section>-->
+
+                                <section class="article__rating">
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                </section>
+                            </section>
+
+                            <p class="article__text">В клинике Assuta работает 1 500 лучших консультантов, врачей и хирургов Израиля. При поступлении в клинику специалисты проходят строжайший отбор, одним из условий работы является постоянное повышение квалификации и умение пользоваться новейшей медицинской аппаратурой.</p>
+
+                        </article>
+
+                        <article class="article article_review">
+
+                            <section class="article__content">
+                                <!--<section class="article__content article__content_left">-->
+                                <p class="article__title">Петр П.</p>
+                                <time class="article__time" datetime="2016-08">Август 2016</time>
+                                <!--</section>-->
+
+                                <section class="article__rating">
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                    <span class="article__star"></span>
+                                </section>
+                            </section>
+
+                            <p class="article__text">В клинике Assuta работает 1 500 лучших консультантов, врачей и хирургов Израиля. При поступлении в клинику специалисты проходят строжайший отбор, одним из условий работы является постоянное п и умение пользоваться новейшей медицинской аппаратурой.</p>
+
+                        </article>
+
+                    </section>
+
+                    <ul class="slider__panel">
+                        <li class="slider__dot slider__dot_active">
+                            <a href="#" class="slider__toggle"></a>
+                        </li>
+                        <li class="slider__dot">
+                            <a href="#" class="slider__toggle"></a>
+                        </li>
+                        <li class="slider__dot">
+                            <a href="#" class="slider__toggle"></a>
+                        </li>
+                        <li class="slider__dot">
+                            <a href="#" class="slider__toggle"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
+
+    </section>
+
+    <footer class="footer">
+
+        <section class="footer__content">
+
+
+
+        </section>
+
+        <nav class="footer__menu">
+
+
+
+        </nav>
+
+        <section class="footer__copyright">
+
+        </section>
+
+    </footer>
+
+</div>
+
+<script src="./home.js"></script>
+
+</body>
+</html>

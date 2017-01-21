@@ -1,0 +1,18 @@
+<svg width="24" height="25" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Meddia_icons-03</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2170 -1446)" figma:type="canvas">
+<g id="Meddia_icons-03" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-2169.07 1446.76)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 14.963 6C 16.623 6 18 7.34 18 9L 18 14L 20 14L 20 9C 20 6.561 18.222 4.52 15.902 4.08C 15.462 1.76 13.404 0 10.963 0L 0 0L 0 24L 14 24L 14 22L 2 22L 2 2L 10.963 2C 12.623 2 14 3.34 14 5L 14 6L 14.963 6ZM 5 9L 9 9L 9 7L 5 7L 5 9ZM 20 19L 20 16L 18 16L 18 19L 15 19L 15 21L 18 21L 18 24L 20 24L 20 21L 23 21L 23 19L 20 19ZM 5 13L 14 13L 14 11L 5 11L 5 13Z"/>
+</defs>
+</svg>

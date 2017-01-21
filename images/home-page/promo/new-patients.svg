@@ -1,0 +1,24 @@
+<svg width="27" height="29" viewBox="0 0 27 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Meddia_icons-02</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2781 -1444)" figma:type="canvas">
+<g id="Meddia_icons-02" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-2780.07 1444.81)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-2769.07 1465.71)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-2770.07 1447.71)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 26 14.898C 26 12.484 24.279 10.464 22 10L 22 6.9C 22 3.4 19.4 0.5 16 0L 10 0C 6.601 0.5 4 3.4 4 6.9L 4 10.002C 1.721 10.465 0 12.484 0 14.9C 0 17.656 2.243 19.9 5 19.9L 6 19.9L 6 11.9L 20 11.9L 20 21C 20 23.801 17.8 26 15 26L 16 27.9C 19.4 27.4 22 24.5 22 21L 22 19.799C 24.279 19.334 26 17.314 26 14.898ZM 4 17.691C 3 17.279 2 16.168 2 14.863C 2 13.558 3 12.447 4 12.033L 4 17.691ZM 6 9.9L 6 6.9C 6 4.099 8.2 1.9 11 1.9L 15 1.9C 17.8 1.9 20 4.099 20 6.9L 20 9.898L 20 9.9L 6 9.9ZM 22 17.766L 22 12.108C 23 12.52 24 13.633 24 14.938C 24 16.24 23 17.354 22 17.766Z"/>
+<path id="path1_fill" d="M 4 0L 0 0L 0 2L 4 2L 4 0Z"/>
+<path id="path2_fill" d="M 4 9.53674e-08L 2 9.53674e-08L 2 2L 0 2L 0 4L 2 4L 2 6L 4 6L 4 4L 6 4L 6 2L 4 2L 4 9.53674e-08Z"/>
+</defs>
+</svg>
