@@ -432,7 +432,7 @@ html, body {
       color: #fff;
       background-color: $orangered;
 
-      transition: background-color .5s ease-in-out;
+      transition: background-color .3s ease-in-out;
 
       &:hover {
         background-color: mix($orangered, #000, 90%)
@@ -537,7 +537,7 @@ html, body {
       text-align: center;
       text-decoration: none;
       border: 1px solid #fff;
-      transition: background-color .5s ease-in-out;
+      transition: background-color .3s ease-in-out;
       
       &:hover {
         background-color: darken($sectionGreen, 10%);
@@ -604,7 +604,7 @@ html, body {
       background-color: transparent;
       opacity: .4;
 
-      transition: background-color .5s ease-in-out;
+      transition: background-color .3s ease-in-out;
     }
 
     &:hover:before {
@@ -638,7 +638,7 @@ html, body {
     color: #000;
     overflow: hidden;
 
-    transition: background-color .5s ease-in-out;
+    transition: background-color .3s ease-in-out;
 
     &:hover {
       background-color: $contentBg;
@@ -940,7 +940,7 @@ html, body {
     font-size:14px;
     color: #fff;
 
-    transition: background-color .5s ease-in;
+    transition: background-color .3s ease-in;
 
     &:focus {
       outline: none;

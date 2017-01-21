@@ -243,7 +243,7 @@ html, body {
       text-align: center;
       color: #fff;
       background-color: #FF5A5F;
-      transition: background-color .5s ease-in-out; }
+      transition: background-color .3s ease-in-out; }
       [class='home-page'] .section_promo .section__link:hover {
         background-color: #e65156; }
   [class='home-page'] .section_organizations {
@@ -316,7 +316,7 @@ html, body {
       text-align: center;
       text-decoration: none;
       border: 1px solid #fff;
-      transition: background-color .5s ease-in-out; }
+      transition: background-color .3s ease-in-out; }
       [class='home-page'] .section_info .section__link:hover {
         background-color: #398e7e; }
   [class='home-page'] .section_reviews {
@@ -356,7 +356,7 @@ html, body {
       bottom: 0;
       background-color: transparent;
       opacity: .4;
-      transition: background-color .5s ease-in-out; }
+      transition: background-color .3s ease-in-out; }
     [class='home-page'] .article_country:hover:before {
       background-color: #000; }
     [class='home-page'] .article_country .article__icon {
@@ -378,7 +378,7 @@ html, body {
     background-color: #fff;
     color: #000;
     overflow: hidden;
-    transition: background-color .5s ease-in-out; }
+    transition: background-color .3s ease-in-out; }
     [class='home-page'] .article_treatment:hover {
       background-color: #F2F2F2; }
     [class='home-page'] .article_treatment .article__title {
@@ -581,7 +581,7 @@ html, body {
     cursor: pointer;
     font-size: 14px;
     color: #fff;
-    transition: background-color .5s ease-in; }
+    transition: background-color .3s ease-in; }
     [class='home-page'] .form__submit:focus {
       outline: none; }
     [class='home-page'] .form__submit:hover {
@@ -591,4 +591,4 @@ html, body {
     width: 100%;
     background-color: #F2F2F2; }
 
-/*# sourceMappingURL=home_old.css.map */
+/*# sourceMappingURL=home.css.map */
