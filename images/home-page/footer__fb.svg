@@ -1,0 +1,14 @@
+<svg width="10" height="21" viewBox="0 0 10 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2006 -2981)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Facebook" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-2005.27 2981.14)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1.97177 3.88054C 1.97177 4.38548 1.97177 6.63925 1.97177 6.63925L -3.88351e-08 6.63925L -3.88351e-08 10.0126L 1.97177 10.0126L 1.97177 20.037L 6.02219 20.037L 6.02219 10.0129L 8.74022 10.0129C 8.74022 10.0129 8.99477 8.39538 9.11816 6.62681C 8.76439 6.62681 6.03751 6.62681 6.03751 6.62681C 6.03751 6.62681 6.03751 4.66429 6.03751 4.32031C 6.03751 3.97557 6.47913 3.51186 6.91561 3.51186C 7.35128 3.51186 8.27078 3.51186 9.12243 3.51186C 9.12243 3.05257 9.12243 1.46563 9.12243 1.20523e-08C 7.9855 1.20523e-08 6.69205 1.20523e-08 6.12191 1.20523e-08C 1.87164 -0.000232916 1.97177 3.37648 1.97177 3.88054Z"/>
+</defs>
+</svg>

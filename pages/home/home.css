@@ -130,11 +130,6 @@ html, body {
     background-color: #F2F2F2;
     overflow: hidden;
     position: relative; }
-  [class='home-page'] .content__section {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    width: 100%; }
   [class='home-page'] .section__content {
     width: 100%;
     display: block; }
@@ -164,12 +159,14 @@ html, body {
     width: 24px;
     height: 24px;
     line-height: 30px;
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
     margin-top: 6px;
     margin-left: 8px; }
   [class='home-page'] .section__mark_small {
     width: 16px;
+    text-align: center;
+    line-height: 23px;
     height: 16px;
     margin-right: 5px;
     font-size: 18px; }
@@ -196,7 +193,6 @@ html, body {
     [class='home-page'] .section_countries .section__header {
       margin-bottom: 42px; }
     [class='home-page'] .section_countries .section__link {
-      width: 18.046875%;
       margin-right: 20px; }
       [class='home-page'] .section_countries .section__link:last-of-type {
         margin-right: 0; }
@@ -311,6 +307,35 @@ html, body {
     [class='home-page'] .section_reviews .section__content {
       text-align: center;
       margin-bottom: 34px; }
+  @media (max-width: 1000px) {
+    [class='home-page'] .section_organizations .section__content {
+      margin-bottom: 0; }
+    [class='home-page'] .section_info .section__content {
+      float: none;
+      margin-bottom: 18px; }
+    [class='home-page'] .section_info .section__content_right {
+      float: none;
+      margin-bottom: 0;
+      text-align: center; } }
+  @media (max-width: 750px) {
+    [class='home-page'] .section__header {
+      font-size: 24px; }
+    [class='home-page'] .section_countries .section__link {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 22px; }
+    [class='home-page'] .section_info {
+      padding-left: 20px;
+      padding-right: 20px; }
+    [class='home-page'] .section_organizations .section__content {
+      margin-bottom: 0; } }
+  @media (max-width: 550px) {
+    [class='home-page'] .section_promo {
+      padding-bottom: 20px; }
+      [class='home-page'] .section_promo .section__content {
+        margin-bottom: 20px; }
+    [class='home-page'] .section__link {
+      width: 100%; } }
   [class='home-page'] .article {
     text-align: center; }
   [class='home-page'] .article__image {
@@ -324,7 +349,7 @@ html, body {
     margin: 0;
     font-size: 14px; }
   [class='home-page'] .article_country {
-    width: 100%;
+    width: 231px;
     max-height: 231px;
     vertical-align: top;
     padding: 94px 0 60px 0;
@@ -493,6 +518,44 @@ html, body {
       font-size: 14px;
       font-weight: normal;
       color: #333333; }
+  @media (max-width: 1000px) {
+    [class='home-page'] .article_patients {
+      margin-right: 0;
+      margin-bottom: 5px; }
+    [class='home-page'] .article_organization {
+      margin-bottom: 20px; }
+    [class='home-page'] .article_review {
+      margin: 5px 20px; }
+      [class='home-page'] .article_review:last-of-type {
+        margin-right: 20px; } }
+  @media (max-width: 750px) {
+    [class='home-page'] .article_organization {
+      margin-bottom: 15px; }
+    [class='home-page'] .article_promo {
+      margin-right: 0; } }
+  @media (max-width: 550px) {
+    [class='home-page'] .article_promo {
+      margin-bottom: 15px; }
+    [class='home-page'] .article_country {
+      width: 100%; }
+    [class='home-page'] .article_treatment {
+      width: 100%;
+      border: 0; }
+    [class='home-page'] .article_patients {
+      margin-bottom: 15px; }
+      [class='home-page'] .article_patients .article__pic {
+        margin: 0 auto;
+        margin-bottom: 15px; }
+      [class='home-page'] .article_patients .article__title {
+        text-align: center; }
+      [class='home-page'] .article_patients .article__text {
+        text-align: center; }
+    [class='home-page'] .article_review {
+      width: auto; }
+      [class='home-page'] .article_review .article__rating {
+        position: static; }
+      [class='home-page'] .article_review .article__content {
+        margin-bottom: 5px; } }
   [class='home-page'] .slider__panel {
     width: 232px;
     margin: 0 auto; }
@@ -725,5 +788,25 @@ html, body {
       width: 14px;
       height: 20px;
       vertical-align: middle; }
+  @media (max-width: 1000px) {
+    [class='home-page'] .footer__info {
+      width: 52%; } }
+  @media (max-width: 750px) {
+    [class='home-page'] .footer__info .footer__text {
+      width: auto;
+      font-size: 14px;
+      padding: 0 10px; }
+    [class='home-page'] .footer__list {
+      margin-bottom: 20px; } }
+  @media (max-width: 550px) {
+    [class='home-page'] .footer__info {
+      display: none; }
+    [class='home-page'] .footer__contacts {
+      float: none; }
+    [class='home-page'] .footer__menu {
+      padding-top: 30px;
+      padding-bottom: 0px; }
+    [class='home-page'] .footer__list {
+      display: block; } }
 
 /*# sourceMappingURL=home.css.map */
