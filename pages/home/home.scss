@@ -645,6 +645,13 @@ html, body {
     }
   }
 
+  @media (max-width: $tabletExtension) {
+    .section_organizations .section__slogan {
+      padding: 0 10px;
+      text-align: left;
+    }
+  }
+
   // Article
   .article {
     text-align: center;

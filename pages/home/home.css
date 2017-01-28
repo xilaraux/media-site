@@ -336,6 +336,10 @@ html, body {
         margin-bottom: 20px; }
     [class='home-page'] .section__link {
       width: 100%; } }
+  @media (max-width: 750px) {
+    [class='home-page'] .section_organizations .section__slogan {
+      padding: 0 10px;
+      text-align: left; } }
   [class='home-page'] .article {
     text-align: center; }
   [class='home-page'] .article__image {
