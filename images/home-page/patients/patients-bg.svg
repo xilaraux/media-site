@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 4.1.465 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXAiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsInNoYWRvd0NvbG9yIjoicmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIsInNoYWRvd0JsdXIiOjEsImxpbmVXaWR0aCI6Mn19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjUsImhlaWdodCI6Miwic2NhbGUiOjEsInBhZ2VzIjp7Imxlbmd0aCI6MSwiZGF0YSI6W3sid2lkdGgiOjUsImhlaWdodCI6Mn1dfX0=" sketchjs:version="4.1.465">
+<g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over; opacity: NaN;">
+	<path id="1e65d03c_x2dab6e_x2d4a3f_x2d971a_x2dcf3acfbb84f4" style="vector-effect: non-scaling-stroke;" d="M0 -1.5 L5 -1.5 5 3.5 0 3.5 z"/>
+	<use xlink:href="#1e65d03c_x2dab6e_x2d4a3f_x2d971a_x2dcf3acfbb84f4"/>
+	<use xlink:href="#1e65d03c_x2dab6e_x2d4a3f_x2d971a_x2dcf3acfbb84f4" style="fill: #379d89; fill-opacity: 1;"/>
+</g>
+</svg>

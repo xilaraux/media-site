@@ -1,18 +1,18 @@
-<svg width="41" height="42" viewBox="0 0 41 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<svg width="31" height="32" viewBox="0 0 31 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
 <title>Meddia_icons-03</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(2724 -2144)" figma:type="canvas">
+<g id="Canvas" transform="translate(4439 -1431)" figma:type="canvas">
 <g id="Meddia_icons-03" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-2723.5 2144.25)" fill="#48B29E" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path0_fill" transform="translate(-4438.98 1431.42)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>
 </g>
 </g>
 <defs>
-<path id="path0_fill" d="M 26.0226 10.4348C 28.9096 10.4348 31.3043 12.7652 31.3043 15.6522L 31.3043 24.3478L 34.7826 24.3478L 34.7826 15.6522C 34.7826 11.4104 31.6904 7.86087 27.6557 7.09565C 26.8904 3.06087 23.3113 0 19.0661 0L 0 0L 0 41.7391L 24.3478 41.7391L 24.3478 38.2609L 3.47826 38.2609L 3.47826 3.47826L 19.0661 3.47826C 21.953 3.47826 24.3478 5.8087 24.3478 8.69565L 24.3478 10.4348L 26.0226 10.4348ZM 8.69565 15.6522L 15.6522 15.6522L 15.6522 12.1739L 8.69565 12.1739L 8.69565 15.6522ZM 34.7826 33.0435L 34.7826 27.8261L 31.3043 27.8261L 31.3043 33.0435L 26.087 33.0435L 26.087 36.5217L 31.3043 36.5217L 31.3043 41.7391L 34.7826 41.7391L 34.7826 36.5217L 40 36.5217L 40 33.0435L 34.7826 33.0435ZM 8.69565 22.6087L 24.3478 22.6087L 24.3478 19.1304L 8.69565 19.1304L 8.69565 22.6087Z"/>
+<path id="path0_fill" d="M 19.517 7.82609C 21.6822 7.82609 23.4783 9.57391 23.4783 11.7391L 23.4783 18.2609L 26.087 18.2609L 26.087 11.7391C 26.087 8.55783 23.7678 5.89565 20.7417 5.32174C 20.1678 2.29565 17.4835 0 14.2996 0L 0 0L 0 31.3043L 18.2609 31.3043L 18.2609 28.6957L 2.6087 28.6957L 2.6087 2.6087L 14.2996 2.6087C 16.4648 2.6087 18.2609 4.35652 18.2609 6.52174L 18.2609 7.82609L 19.517 7.82609ZM 6.52174 11.7391L 11.7391 11.7391L 11.7391 9.13043L 6.52174 9.13043L 6.52174 11.7391ZM 26.087 24.7826L 26.087 20.8696L 23.4783 20.8696L 23.4783 24.7826L 19.5652 24.7826L 19.5652 27.3913L 23.4783 27.3913L 23.4783 31.3043L 26.087 31.3043L 26.087 27.3913L 30 27.3913L 30 24.7826L 26.087 24.7826ZM 6.52174 16.9565L 18.2609 16.9565L 18.2609 14.3478L 6.52174 14.3478L 6.52174 16.9565Z"/>
 </defs>
 </svg>
